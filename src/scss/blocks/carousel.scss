@@ -1,0 +1,68 @@
+@use '../base/mixins' as*;
+@use '../base/vars' as *;
+
+.carousel {
+	&__slide {
+		display: inline-block;
+		padding-right: 20px;
+	}
+
+	&_portfolio {
+		// display: flex;
+		overflow: hidden;
+		width: 62.5dvw;
+		margin-left: auto;
+		white-space: nowrap;
+
+		.flickity {
+			&-viewport {
+				overflow: visible;
+			}
+
+			&-page {
+				&-dot {
+					background-color: $gray-50;
+
+					&.is-selected {
+						background-color: $gray-100;
+					}
+				}
+
+				&-dots {
+					display: none;
+					position: static;
+					margin-top: 54px;
+					padding-bottom: 6px;
+				}
+			}
+		}
+	}
+
+	&-btn {
+		display: grid;
+		place-items: center;
+		border-radius: 50%;
+		border: 1px solid $gray-100;
+		transition: border-color 0.1s ease-in-out;
+		width: 48px;
+		height: 48px;
+		background-color: transparent;
+		cursor: pointer;
+
+		@include hover {
+			background-color: rgba(150, 150, 150, 0.1);
+		}
+
+		&_previous {
+			rotate: 180deg;
+		}
+
+		&_white {
+			border-color: $gray-0;
+
+			.icon {
+				background-color: $gray-0;
+			}
+		}
+	}
+}

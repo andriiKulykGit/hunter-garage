@@ -1,0 +1,52 @@
+@use '../base/mixins' as*;
+@use '../base/vars' as *;
+
+.portfolio {
+	position: relative;
+	margin-bottom: $section-margin;
+	// overflow: hidden;
+	padding-block: calc($section-margin + 20px);
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		margin-bottom: 40px;
+	}
+
+	&__inner {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(50%);
+		// display: grid;
+		// grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+
+	&__btns {
+		display: flex;
+		gap: 40px;
+		margin-bottom: 40px;
+	}
+
+	&__bg {
+		position: absolute;
+		width: 50%;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: $gray-100;
+
+		&::before {
+			position: absolute;
+			content: "";
+			left: 0;
+			bottom: 0;
+			height: 80px;
+			aspect-ratio: 1;
+			max-height: 50%;
+			background: linear-gradient(45deg, $gray-0 0%, $gray-0 49.9%, $gray-100 50%, $gray-100 100%);
+		}
+	}
+}

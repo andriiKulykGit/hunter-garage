@@ -1,0 +1,52 @@
+@use '../base/mixins' as *;
+@use '../base/vars' as *;
+
+.prefooter {
+	margin-bottom: $section-margin;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	&__text {
+		position: relative;
+		text-overflow: -o-ellipsis-lastline;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+		overflow: hidden;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 42px;
+			background: linear-gradient(180deg, transparent, #fff);
+			pointer-events: none;
+		}
+
+		&._expanded {
+			display: block;
+
+			&::after {
+				visibility: hidden;
+			}
+		}
+	}
+
+	&__more {
+		border: none;
+		background-color: transparent;
+		width: fit-content;
+		cursor: pointer;
+		user-select: none;
+
+		@include hover {
+			text-decoration: underline;
+		}
+	}
+}

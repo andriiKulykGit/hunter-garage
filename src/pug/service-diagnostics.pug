@@ -1,0 +1,76 @@
+extends layouts/layout.pug
+
+block title
+	- var title = "Діагностика автомобіля";
+
+block content
+	- var title = "Діагностика автомобіля"
+	- var srcPath = "service/diagnostics/hero"
+	- var text = "Hunters Garage має всі необхідні ресурси та інструменти для проведення якісної діагностики всіх систем автомобіля."
+	include blocks/service-hero
+
+	- var srcPath = "service/diagnostics/2"
+	- var title = "Ми виконуємо такі види діагностики:"
+	- var items = [ "Діагностика перед придбанням вживаного автомобіля;", "Діагностика ходової частини та її компонентів;", "Діагностика на підтікання;", "Діагностика електрообладнання;", "Діагностика детектором витоку;", "Комплекс діагностики ходової та гальмівної систем."]
+	- var showList = true
+	- var showText = false
+	include blocks/fifty-fifty
+
+	- var items = ["Діагностику ходової частини", "Гальмівної системи", "Перевірку рівня всіх рідин"]
+	.decision
+		.container
+			.decision__wrapper
+				.container.container_1172
+					.decision__inner
+						.decision__col
+							.decision__content
+								h2.h2.decision__title Комплексне рішення
+								p.text-l.decision__body
+									span Пропонуємо комплексну перевірку автомобіля #[span(class="accent-color") 500 грн]
+									span Перевірка містить:
+								+list(items)(class="text-l")
+							.decision__btns
+								.btn-wrapper
+									a.btn.btn_yellow(href="#") Замовити послугу
+								.btn-wrapper
+									a.btn.btn_white(href="#") Ціни на послуги
+						.decision__col
+							.decision__media
+								.video.video_mini.pswp-gallery.relative
+									- var image = 'about-us'
+									- var videoID = 'JGwWNGJdvx8'
+									a.video__link(href="https://youtu.be/" + videoID  target="_blank" rel="noopenner nofollow noreferrer" data-pswp-type="youtube-video" data-id=videoID)
+										span.visually-hidden Назва відео
+										picture
+											source(srcset="img/placeholder.png" data-srcset="img/service/diagnostics/3.webp" type="image/webp")
+											img.video__img.lozad(src="img/service/diagnostics/3.jpg" srcset="img/placeholder.png" data-srcset="img/service/diagnostics/3.jpg" alt="Назва відео" width="550")
+									.video__play
+
+	- var iconCard1 = "error"
+	- var titleCard1 = "Помилка"
+	- var iconCard2 = "noise"
+	- var titleCard2 = "Сторонній звук"
+	- var iconCard3 = "1-2"
+	- var titleCard3 = "Раз на півроку "
+	- var iconCard4 = "key"
+	- var titleCard4 = "Перед купівлею авто"
+
+	- var title = "Коли варто пройти діагностику"
+	- var text = "Варто перевіряти автомбіль не лише коли виникли питання, але й перед дальніми поїздками."
+	include blocks/diagnostics
+
+	- var slides = [1, 2, 3, 4, 5, 6];
+	include blocks/portfolio
+
+	.services
+		.container
+			.services__title.h2.text-center Сервіси
+			ul.services__grid
+				+card-service("duplicate", "від 750 до 2200 грн.", "Діагностика автомобіля")
+				+card-service("diagnostics-electric", "від 750 до 2200 грн.", "Діагностика електрообладнання")
+
+	include blocks/promo
+
+	include blocks/app
+
+	+prefooter("Які фактори впливають на регулювання розвалу-сходження?", "Регулювання розвалу-сходження - це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості  автомобіля. Існує ряд факторів, які впливають на регулювання  розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні  автомобілі потребують більшого розвалу, ніж Регулювання розвалу-сходження – це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості  автомобіля. Існує ряд факторів, які впливають на регулювання  розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні  автомобілі потребують більшого розвалу, ніж")(class="h2")

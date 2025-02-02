@@ -1,0 +1,48 @@
+@use '../base/vars' as *;
+
+.advantage {
+	position: relative;
+	z-index: 1;
+	padding: 40px;
+	background-color: $gray-20;
+	color: $gray-100;
+	overflow: hidden;
+
+	&__icon {
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		margin-bottom: 16px;
+	}
+
+	&_black {
+		background-color: $gray-100;
+		color: $gray-0;
+	}
+
+	&_lines {
+		&::after {
+			position: absolute;
+			z-index: -1;
+			content: "";
+			aspect-ratio: 1;
+			height: 100%;
+			top: 0;
+			right: 0;
+			background: url("../img/decision-lines.svg") no-repeat center/contain;
+		}
+	}
+
+	&_experience {
+		min-height: 408px;
+		background: url("../img/advantage/1.webp") no-repeat center/cover;
+		background-position: center;
+	}
+
+	&_insurance {
+		min-height: 408px;
+		background: url("../img/advantage/2.webp") no-repeat center/cover;
+		background-position: center;
+	}
+}

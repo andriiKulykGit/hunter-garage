@@ -1,0 +1,71 @@
+extends layouts/layout.pug
+
+block title
+	- var title = "Електрика";
+
+block content
+	- var title = "Електрика"
+	- var srcPath = "service/electricity/hero"
+	- var text = "Робота сучасного автомобіля контролюється десятками датчиків, зняття показань з яких дозволяє з упевненістю визначити несправності, не вдаючись до демонтажу і розбирання агрегату."
+	include blocks/service-hero
+
+	- var srcPath = "service/electricity/2"
+	- var title = "Послуги"
+	- var text = "Відділ електрики Hunters Garage надає послуги як з діаностування та ремонту електрики та електроніки, та і з встановлення додаткового обладнання. "
+	- var showList = false
+	- var showText = true
+	include blocks/fifty-fifty
+
+	.decision
+		.container
+			.decision__wrapper
+				.container.container_1172
+					.decision__inner
+						.decision__col
+							.decision__content
+								h2.h2.decision__title Обладнання 
+								p.text-l.decision__body Електрики Hunters Garage використовують сучасне обладнаня ля діагностування автомобіля, прошивки програмного забезпечення, регулювання світла фар
+							.decision__btns
+								.btn-wrapper
+									a.btn.btn_yellow(href="#") Замовити послугу
+								.btn-wrapper
+									a.btn.btn_white(href="#") Ціни на послуги
+						.decision__col
+							.decision__media
+								picture
+									source(srcset="img/placeholder.png" data-srcset="img/service/electricity/3.webp" type="image/webp")
+									img.lozad(src="img/service/electricity/3.jpg" srcset="img/placeholder.png" data-srcset="img/service/electricity/3.jpg" alt="Назва відео" width="550")
+
+	- var iconCard1 = "check"
+	- var titleCard1 = "Check"
+	- var iconCard2 = "gas"
+	- var titleCard2 = "ГБО"
+	- var iconCard3 = "headlights"
+	- var titleCard3 = "Світло фар"
+	- var iconCard4 = "dop"
+	- var titleCard4 = "Додаткове обладнання"
+
+	- var title = "Коли варто звернутись до електрика "
+	- var text = "Это текст-\"рыба\", часто используемый в печати и вэб-дизайне."
+	include blocks/diagnostics
+
+	- var slides = [1, 2, 3, 4, 5, 6];
+	include blocks/portfolio
+
+	.services
+		.container
+			.services__title.h2.text-center Сервіси
+			ul.services__grid
+				+card-service("electrical-repair", "від 750 до 2200 грн.", "Ремонт електрики")
+				+card-service("sound", "від 750 до 2200 грн.", "Встановлення додаткового обладнання")
+				+card-service("app", "від 750 до 2200 грн.", "Прошивання програмного забезпечення")
+				+card-service("headlight", "від 750 до 2200 грн.", "Ремонт автомобільної оптики")
+				+card-service("cool", "від 750 до 2200 грн.", "Обслуговування кондиціонера")
+				+card-service("gbo", "від 750 до 2200 грн.", "Встановлення та обслуговування ГБО")
+				+card-service("usa", "від 750 до 2200 грн.", "Адаптація авто з США")
+
+	include blocks/promo
+
+	include blocks/app
+
+	+prefooter("Які фактори впливають на регулювання розвалу-сходження?", "Регулювання розвалу-сходження - це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості  автомобіля. Існує ряд факторів, які впливають на регулювання  розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні  автомобілі потребують більшого розвалу, ніж Регулювання розвалу-сходження – це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості  автомобіля. Існує ряд факторів, які впливають на регулювання  розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні  автомобілі потребують більшого розвалу, ніж")(class="h2")

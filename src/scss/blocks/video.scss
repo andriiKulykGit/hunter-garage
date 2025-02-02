@@ -1,0 +1,84 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+
+.video {
+	position: relative;
+	background-color: $gray-100;
+	padding-block: 110px;
+	margin-bottom: $section-margin;
+
+	&__img {
+		margin-inline: auto;
+	}
+
+	&__link {
+		display: flex;
+
+		@include hover {
+			& + .video__play {
+				transform: translate(-50%, -50%) scale(1.1);
+			}
+		}
+	}
+
+	&__play {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 170px;
+		max-width: 40%;
+		aspect-ratio: 1;
+		border-radius: 50%;
+		background-color: rgba(0, 0, 0, 0.2);
+		backdrop-filter: blur(12px);
+		border: 1px solid;
+		border-color: $gray-60 $gray-80 $gray-90 $gray-80;
+		cursor: pointer;
+		transition: transform 0.1s ease-in-out;
+		pointer-events: none;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(calc(-50% + 6px), -50%);
+			content: "";
+			width: 48px;
+			height: 64px;
+			mask-size: contain;
+			mask-repeat: no-repeat;
+			mask-image: url("../img/svgicons/chevron-player.svg");
+			-webkit-mask-image: url("../img/svgicons/chevron-player.svg");
+			background-color: $primary;
+			mask-position: center;
+		}
+	}
+
+	&_mini {
+		background: none;
+		padding: 0;
+		margin: 0;
+
+		.video {
+			&__play {
+				width: 98px;
+
+				&::before {
+					transform: translate(calc(-50% + 3px), -50%);
+					width: 24px;
+					height: 32px;
+				}
+			}
+
+			&__link {
+				display: flex;
+			}
+
+			&__img {
+				flex: 1;
+				width: 100%;
+			}
+		}
+	}
+}

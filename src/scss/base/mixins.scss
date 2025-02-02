@@ -1,0 +1,23 @@
+@mixin hover {
+	&:hover {
+		@media (hover: hover) and (pointer: fine) {
+			@content;
+		}
+	}
+}
+
+@mixin new-mask-icon($name, $color: #000) {
+	&_#{$name} {
+		mask-image: url("../img/svgicons/#{$name}.svg");
+		-webkit-mask-image: url("../img/svgicons/#{$name}.svg");
+		background-color: #{$color};
+		@content;
+	}
+}
+
+@mixin new-bg-icon($name) {
+	&_#{$name} {
+		background-image: url("../img/svgicons/#{$name}.svg");
+		@content;
+	}
+}

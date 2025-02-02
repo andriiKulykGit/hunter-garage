@@ -1,0 +1,38 @@
+mixin card-service(icon, title, text)
+	li.card-service
+		.card-service__head
+			.card-service__icon
+				span(class="icon icon_l icon_" + icon)
+			a.card-service__title.bold(href="#")= title
+		p.card-service__text= text
+
+mixin card-diagnostics(icon, text)
+	li.card-diagnostics
+		.card-diagnostics__icon
+			span(class="icon icon_l icon_" + icon)
+		p.card-diagnostics__text= text
+
+mixin list(items)
+	ul.list(class!=attributes.class)
+		each item in items
+			li.list__li= item
+
+mixin prefooter(title, text)
+	.prefooter
+		.container
+			.prefooter__inner
+				h2.prefooter__title(class!=attributes.class)=title
+				p.prefooter__text=text
+				button.prefooter__more._read-more(type="button" data-second-text="Згорнути") Читати повністю
+
+mixin big-card-service(title, img, tag)
+	.big-card&attributes(attributes)
+		picture
+			source(srcset="img/placeholder.png" data-srcset="img/" + img + ".webp" type="image/webp")
+			img.big-card__img.lozad(src="img/" + img + ".png" srcset="img/placeholder.png" data-srcset="img/" + img + ".png" alt=title width="453")
+		.big-card__inner= title
+		a.big-card__link(href="#")
+			span.visually-hidden= title
+		if tag
+			.big-card__tag
+				span.tag= tag

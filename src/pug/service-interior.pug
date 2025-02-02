@@ -1,0 +1,67 @@
+extends layouts/layout.pug
+
+block title
+	- var title = "Інтер'єр автомобіля";
+
+block content
+	- var title = "Інтер'єр автомобіля"
+	- var srcPath = "service/interior/hero"
+	- var text = "Hunters Garage пропонує послуги власного ательє з перешиття салону авто. Здійснюємо перетяжку керма, ремонт та повну заміну матеріалу подушки, обшивку торпедо та карт дверей, перешиття крісел та даху."
+	include blocks/service-hero
+
+	- var srcPath = "service/interior/2"
+	- var title = "Ательє"
+	- var text = "Наші професіонали з багаторічним досвідом перетворять звичайний салон автомобіля в справжній шедевр, адже можливості нашого ательє необмежені: можемо змінити колір та матеріал оббивки, додати оригінальні декоративні елементи, виконати перфорацію, вишивку та багато іншого."
+	- var showList = false
+	- var showText = true
+	include blocks/fifty-fifty
+
+	.decision
+		.container
+			.decision__wrapper
+				.container.container_1172
+					.decision__inner
+						.decision__col
+							.decision__content
+								h2.h2.decision__title Перетяжка салону 
+								p.text-l.decision__body Перетяжка салону авто може бути виконана з різних матеріалів, таких як шкіра, тканина, алькантара та інші. Кожен з цих матеріалів має свої переваги та недоліки. Так шкіра – це довговічний матеріал, який легко чистити, але вона дорожча за інші. Тканина доступніша, але вимоглива в догляді та не така зносостійка. Алькантара поєднує в собі переваги шкіри та тканини.
+							.decision__btns
+								.btn-wrapper
+									a.btn.btn_yellow(href="#") Замовити послугу
+								.btn-wrapper
+									a.btn.btn_white(href="#") Ціни на послуги
+						.decision__col
+							.decision__media
+								picture
+									source(srcset="img/placeholder.png" data-srcset="img/service/interior/3.webp" type="image/webp")
+									img.lozad(src="img/service/interior/3.jpg" srcset="img/placeholder.png" data-srcset="img/service/interior/3.jpg" alt="Назва відео" width="550")
+
+	- var iconCard1 = "wheel"
+	- var titleCard1 = "Тріщини на кермі"
+	- var iconCard2 = "abrasions"
+	- var titleCard2 = "Потертості на сидінні"
+	- var iconCard3 = "design"
+	- var titleCard3 = "Втілення бажаного дизайну "
+	- var iconCard4 = "sewing-machine"
+	- var titleCard4 = "Ремонт стелі"
+
+	- var title = "Коли варто звернути увагу на перешив салону"
+	- var text = "Это текст-\"рыба\", часто используемый в печати и вэб-дизайне."
+	include blocks/diagnostics
+
+	- var slides = [1, 2, 3, 4, 5, 6];
+	include blocks/portfolio
+
+	.services
+		.container
+			.services__title.h2.text-center Сервіси
+			ul.services__grid
+				+card-service("sewing-machine", "від 750 до 2200 грн.", "Перетяжка салону автомобіля")
+				+card-service("noise", "від 750 до 2200 грн.", "Шумоізоляція  авто")
+				+card-service("screwdriver", "від 750 до 2200 грн.", "Ремонт салону автомобіля")
+
+	include blocks/promo
+
+	include blocks/app
+
+	+prefooter("Які фактори впливають на регулювання розвалу-сходження?", "Регулювання розвалу-сходження - це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості  автомобіля. Існує ряд факторів, які впливають на регулювання  розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні  автомобілі потребують більшого розвалу, ніж Регулювання розвалу-сходження – це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості  автомобіля. Існує ряд факторів, які впливають на регулювання  розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні  автомобілі потребують більшого розвалу, ніж")(class="h2")

@@ -1,0 +1,16 @@
+@use '../base/vars' as *;
+
+.bubble {
+	position: absolute;
+	width: 360px;
+	background: url("../img/bubble.svg") no-repeat center/cover;
+	color: $gray-100;
+	display: grid;
+	place-items: center;
+	aspect-ratio: 36/13;
+
+	&_service {
+		right: 0;
+		top: 0;
+	}
+}

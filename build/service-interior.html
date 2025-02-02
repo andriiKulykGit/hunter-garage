@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Інтер'єр автомобіля | Hunters Garage</title>
+		<meta name="description" content="Description" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="img/favicons/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" />
+		<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-144x144.png" sizes="144x144" />
+		<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-152x152.png" sizes="152x152" />
+		<link rel="preload" href="img/placeholder.png" as="image" />
+		<meta name="theme-color" content="#000" />
+		<meta name="application-name" content="Hunters Garage" />
+		<meta name="msapplication-TileColor" content="#" />
+		<meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__wrapper">
+						<div class="header__col header__col_left">
+							<a class="header__logo" href="/"><img class="logo" src="img/logo.svg" alt="Логотип Hunters Garage" width="222" height="45"/></a>
+							<nav class="menu" aria-label="Основне меню">
+								<ul class="menu__list" role="menubar" aria-label="Основне меню">
+									<li class="menu__item" role="none"><a class="menu__link" role="menuitem" href="prices.html">Ціни</a></li>
+									<li class="menu__item" role="none">
+										<button class="menu__link _trigger-dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false" type="button">
+											<span>Послуги</span><span class="icon icon_chevron-header icon_s"></span>
+										</button>
+										<ul class="dropdown dropdown_main" hidden>
+											<li class="dropdown__item">
+												<a class="dropdown__link" role="menuitem" href="#" aria-haspopup="true" aria-expanded="false">Діагностика</a>
+												<ul class="dropdown dropdown_submenu" hidden role="menu" aria-label="Діагностика">
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика автомобіля</a></li>
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика електрообладнання</a></li>
+												</ul>
+												<a class="dropdown__link" role="menuitem" href="#" aria-haspopup="true" aria-expanded="false">Технічне обслуговування та ремонт</a>
+												<ul class="dropdown dropdown_submenu" hidden role="menu" aria-label="Технічне обслуговування та ремонт">
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика автомобіля</a></li>
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика електрообладнання</a></li>
+												</ul>
+												<a class="dropdown__link" role="menuitem" href="#" aria-haspopup="true" aria-expanded="false">Електрика</a>
+												<ul class="dropdown dropdown_submenu" hidden role="menu" aria-label="Електрика">
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика автомобіля</a></li>
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика електрообладнання</a></li>
+												</ul>
+												<a class="dropdown__link" role="menuitem" href="#" aria-haspopup="true" aria-expanded="false">Інтер'єр</a>
+												<ul class="dropdown dropdown_submenu" hidden role="menu" aria-label="Інтер'єр">
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика автомобіля</a></li>
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика електрообладнання</a></li>
+												</ul>
+												<a class="dropdown__link" role="menuitem" href="#" aria-haspopup="true" aria-expanded="false">Автомийка</a>
+												<ul class="dropdown dropdown_submenu" hidden role="menu" aria-label="Автомийка">
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика автомобіля</a></li>
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика електрообладнання</a></li>
+												</ul>
+												<a class="dropdown__link" role="menuitem" href="#" aria-haspopup="true" aria-expanded="false">Сертифікація</a>
+												<ul class="dropdown dropdown_submenu" hidden role="menu" aria-label="Сертифікація">
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика автомобіля</a></li>
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика електрообладнання</a></li>
+												</ul>
+												<a class="dropdown__link" role="menuitem" href="#" aria-haspopup="true" aria-expanded="false">Кузовний ремонт та фарбування</a>
+												<ul class="dropdown dropdown_submenu" hidden role="menu" aria-label="Кузовний ремонт та фарбування">
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика автомобіля</a></li>
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика електрообладнання</a></li>
+												</ul>
+												<a class="dropdown__link" role="menuitem" href="#" aria-haspopup="true" aria-expanded="false">Інші послуги</a>
+												<ul class="dropdown dropdown_submenu" hidden role="menu" aria-label="Інші послуги">
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика автомобіля</a></li>
+													<li class="dropdown__item"><a class="dropdown__link" role="menuitem" href="#">Діагностика електрообладнання</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item" role="none"><a class="menu__link" role="menuitem" href="portfolio.html">Портфоліо</a></li>
+									<li class="menu__item" role="none">
+										<a class="menu__link" role="menuitem" href="#"><span>Акції</span><span class="icon icon_sale icon_s"></span></a>
+									</li>
+									<li class="menu__item" role="none"><a class="menu__link" role="menuitem" href="#footer">Контакти</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header__col header__col_right">
+							<a class="phone" href="tel:+380676625801"
+								><span class="phone__icon"><span class="icon icon_phone icon_m"></span></span><span class="phone__text">+38(067) 66-25-801</span></a
+							>
+							<div class="header__btn">
+								<div class="btn-wrapper"><a class="btn btn_white" href="#">Залишити заявку</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="main">
+				<div class="service-hero">
+					<picture>
+						<source srcset="img/placeholder.png" data-srcset="img/service/interior/hero.webp" type="image/webp" />
+						<img class="service-hero__bg lozad" src="img/service/interior/hero.jpg" srcset="img/placeholder.png" data-srcset="img/service/interior/hero.jpg" alt="" width="1920" />
+					</picture>
+					<div class="container">
+						<div class="service-hero__breadcrumb">
+							<nav class="breadcrumb breadcrumb_white" aria-label="Навігація">
+								<h2 class="visually-hidden">Навігація</h2>
+								<ol class="breadcrumb__list">
+									<li class="breadcrumb__item">
+										<a class="breadcrumb__link" href="#"><span class="visually-hidden">Гровна сторінка</span><span class="icon icon_home"></span></a>
+									</li>
+									<li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Портфоліо</a></li>
+									<li class="breadcrumb__item"><a class="breadcrumb__link" href="#" aria-current="page">Діагностика</a></li>
+								</ol>
+							</nav>
+						</div>
+						<section class="service-hero__inner">
+							<h1 class="service-hero__title display-1">Інтер'єр автомобіля</h1>
+							<p class="service-hero__text">
+								Hunters Garage пропонує послуги власного ательє з перешиття салону авто. Здійснюємо перетяжку керма, ремонт та повну заміну матеріалу подушки, обшивку торпедо та карт
+								дверей, перешиття крісел та даху.
+							</p>
+							<div class="service-hero__btns">
+								<div class="btn-wrapper"><a class="btn btn_yellow" href="#">Онлайн-запис</a></div>
+								<div class="btn-wrapper"><a class="btn btn_white" href="#">Ціни на послуги</a></div>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="container container_1172">
+					<div class="fifty-fifty">
+						<div>
+							<picture>
+								<source srcset="img/placeholder.png" data-srcset="img/service/interior/2.webp" type="image/webp" />
+								<img class="fifty-fifty__img lozad" src="img/service/interior/2.png" srcset="img/placeholder.png" data-srcset="img/service/interior/2.png" alt="" width="550" />
+							</picture>
+						</div>
+						<div>
+							<h2 class="fifty-fifty__title h2">Ательє</h2>
+							<div class="fifty-fifty__body text-l">
+								<p>
+									Наші професіонали з багаторічним досвідом перетворять звичайний салон автомобіля в справжній шедевр, адже можливості нашого ательє необмежені: можемо змінити колір
+									та матеріал оббивки, додати оригінальні декоративні елементи, виконати перфорацію, вишивку та багато іншого.
+								</p>
+							</div>
+							<div class="fifty-fifty__btns">
+								<div class="btn-wrapper"><a class="btn btn_yellow" href="#">Замовити послугу</a></div>
+								<div class="btn-wrapper"><a class="btn btn_black" href="#">Ціни на послуги</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="decision">
+					<div class="container">
+						<div class="decision__wrapper">
+							<div class="container container_1172">
+								<div class="decision__inner">
+									<div class="decision__col">
+										<div class="decision__content">
+											<h2 class="h2 decision__title">Перетяжка салону</h2>
+											<p class="text-l decision__body">
+												Перетяжка салону авто може бути виконана з різних матеріалів, таких як шкіра, тканина, алькантара та інші. Кожен з цих матеріалів має свої переваги та
+												недоліки. Так шкіра – це довговічний матеріал, який легко чистити, але вона дорожча за інші. Тканина доступніша, але вимоглива в догляді та не така
+												зносостійка. Алькантара поєднує в собі переваги шкіри та тканини.
+											</p>
+										</div>
+										<div class="decision__btns">
+											<div class="btn-wrapper"><a class="btn btn_yellow" href="#">Замовити послугу</a></div>
+											<div class="btn-wrapper"><a class="btn btn_white" href="#">Ціни на послуги</a></div>
+										</div>
+									</div>
+									<div class="decision__col">
+										<div class="decision__media">
+											<picture>
+												<source srcset="img/placeholder.png" data-srcset="img/service/interior/3.webp" type="image/webp" />
+												<img
+													class="lozad"
+													src="img/service/interior/3.jpg"
+													srcset="img/placeholder.png"
+													data-srcset="img/service/interior/3.jpg"
+													alt="Назва відео"
+													width="550"
+												/>
+											</picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="diagnostics">
+					<div class="container">
+						<div class="diagnostics__wrapper">
+							<div class="diagnostics__col diagnostics__col_left">
+								<div class="diagnostics__content">
+									<h2 class="h2 diagnostics__title">Коли варто звернути увагу на перешив салону</h2>
+									<p class="text-l diagnostics__text">Это текст-&quot;рыба&quot;, часто используемый в печати и вэб-дизайне.</p>
+								</div>
+							</div>
+							<div class="diagnostics__col diagnostics__col_right">
+								<ul class="diagnostics__list">
+									<li class="card-diagnostics">
+										<div class="card-diagnostics__icon"><span class="icon icon_l icon_wheel"></span></div>
+										<p class="card-diagnostics__text">Тріщини на кермі</p>
+									</li>
+									<li class="card-diagnostics">
+										<div class="card-diagnostics__icon"><span class="icon icon_l icon_abrasions"></span></div>
+										<p class="card-diagnostics__text">Потертості на сидінні</p>
+									</li>
+									<li class="card-diagnostics">
+										<div class="card-diagnostics__icon"><span class="icon icon_l icon_design"></span></div>
+										<p class="card-diagnostics__text">Втілення бажаного дизайну</p>
+									</li>
+									<li class="card-diagnostics">
+										<div class="card-diagnostics__icon"><span class="icon icon_l icon_sewing-machine"></span></div>
+										<p class="card-diagnostics__text">Ремонт стелі</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio">
+					<div class="portfolio__bg"></div>
+					<div class="container relative">
+						<div class="portfolio__inner">
+							<h2 class="portfolio__title h2">Портфоліо</h2>
+							<p class="portfolio__text">Діагностика автомобіля</p>
+							<div class="portfolio__btns">
+								<button class="carousel-btn carousel-btn_previous" type="button"><span class="visually-hidden">Назад</span><span class="icon icon_chevron"></span></button>
+								<button class="carousel-btn carousel-btn_next" type="button"><span class="visually-hidden">Далі</span><span class="icon icon_chevron"></span></button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel carousel_portfolio">
+						<div class="carousel-cell carousel__slide">
+							<picture>
+								<source srcset="img/placeholder.png" data-flickity-lazyload-srcset="img/portfolio/1.webp" type="image/webp" />
+								<img
+									class="portfolio__img"
+									src="img/portfolio/1.jpg"
+									srcset="img/placeholder.png"
+									data-flickity-lazyload-srcset="img/portfolio/1.jpg"
+									alt=""
+									height="350"
+									width="467"
+								/>
+							</picture>
+						</div>
+						<div class="carousel-cell carousel__slide">
+							<picture>
+								<source srcset="img/placeholder.png" data-flickity-lazyload-srcset="img/portfolio/2.webp" type="image/webp" />
+								<img
+									class="portfolio__img"
+									src="img/portfolio/2.jpg"
+									srcset="img/placeholder.png"
+									data-flickity-lazyload-srcset="img/portfolio/2.jpg"
+									alt=""
+									height="350"
+									width="467"
+								/>
+							</picture>
+						</div>
+						<div class="carousel-cell carousel__slide">
+							<picture>
+								<source srcset="img/placeholder.png" data-flickity-lazyload-srcset="img/portfolio/3.webp" type="image/webp" />
+								<img
+									class="portfolio__img"
+									src="img/portfolio/3.jpg"
+									srcset="img/placeholder.png"
+									data-flickity-lazyload-srcset="img/portfolio/3.jpg"
+									alt=""
+									height="350"
+									width="467"
+								/>
+							</picture>
+						</div>
+						<div class="carousel-cell carousel__slide">
+							<picture>
+								<source srcset="img/placeholder.png" data-flickity-lazyload-srcset="img/portfolio/4.webp" type="image/webp" />
+								<img
+									class="portfolio__img"
+									src="img/portfolio/4.jpg"
+									srcset="img/placeholder.png"
+									data-flickity-lazyload-srcset="img/portfolio/4.jpg"
+									alt=""
+									height="350"
+									width="467"
+								/>
+							</picture>
+						</div>
+						<div class="carousel-cell carousel__slide">
+							<picture>
+								<source srcset="img/placeholder.png" data-flickity-lazyload-srcset="img/portfolio/5.webp" type="image/webp" />
+								<img
+									class="portfolio__img"
+									src="img/portfolio/5.jpg"
+									srcset="img/placeholder.png"
+									data-flickity-lazyload-srcset="img/portfolio/5.jpg"
+									alt=""
+									height="350"
+									width="467"
+								/>
+							</picture>
+						</div>
+						<div class="carousel-cell carousel__slide">
+							<picture>
+								<source srcset="img/placeholder.png" data-flickity-lazyload-srcset="img/portfolio/6.webp" type="image/webp" />
+								<img
+									class="portfolio__img"
+									src="img/portfolio/6.jpg"
+									srcset="img/placeholder.png"
+									data-flickity-lazyload-srcset="img/portfolio/6.jpg"
+									alt=""
+									height="350"
+									width="467"
+								/>
+							</picture>
+						</div>
+					</div>
+				</div>
+				<div class="services">
+					<div class="container">
+						<div class="services__title h2 text-center">Сервіси</div>
+						<ul class="services__grid">
+							<li class="card-service">
+								<div class="card-service__head">
+									<div class="card-service__icon"><span class="icon icon_l icon_sewing-machine"></span></div>
+									<a class="card-service__title bold" href="#">від 750 до 2200 грн.</a>
+								</div>
+								<p class="card-service__text">Перетяжка салону автомобіля</p>
+							</li>
+							<li class="card-service">
+								<div class="card-service__head">
+									<div class="card-service__icon"><span class="icon icon_l icon_noise"></span></div>
+									<a class="card-service__title bold" href="#">від 750 до 2200 грн.</a>
+								</div>
+								<p class="card-service__text">Шумоізоляція авто</p>
+							</li>
+							<li class="card-service">
+								<div class="card-service__head">
+									<div class="card-service__icon"><span class="icon icon_l icon_screwdriver"></span></div>
+									<a class="card-service__title bold" href="#">від 750 до 2200 грн.</a>
+								</div>
+								<p class="card-service__text">Ремонт салону автомобіля</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="container">
+					<div class="promo">
+						<picture>
+							<source srcset="img/placeholder.png" data-srcset="img/promo.webp" type="image/webp" />
+							<img class="promo__img lozad" src="img/promo.jpg" srcset="img/placeholder.png" data-srcset="img/promo.jpg" alt="" width="1060" />
+						</picture>
+						<div class="promo__inner">
+							<div class="promo__subtitle h5 bold">Мережа автосервісів</div>
+							<div class="promo__title h2 bold">HUNTERS GARAGE</div>
+							<div class="promo__text">Технічне обслуговування, кузовні роботи, ремонти двигуна, автоательє та послуги з догляду.</div>
+							<div class="promo__btn">
+								<div class="btn-wrapper"><a class="btn btn_yellow" href="#"> Онлайн-запис</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="app">
+						<div class="app__inner">
+							<div class="app__preview">
+								<div class="app__icon"></div>
+								<div>
+									<div class="app__name">HUNTERS APP</div>
+									<div class="stars">
+										<span class="icon icon_star"></span><span class="icon icon_star"></span><span class="icon icon_star"></span><span class="icon icon_star"></span
+										><span class="icon icon_star"></span>
+									</div>
+								</div>
+							</div>
+							<div class="app__title h2 bold">Встановлюй додаток, отримай <span class="mark">знижку 15%</span> на техогляд</div>
+							<div class="app__btns">
+								<a class="app__btn app__btn_apple" href="#" rel="noopenner nofollow noreferrer" target="_blank"><span class="visually-hidden">Скачати з App Store</span></a
+								><a class="app__btn app__btn_google" href="#" rel="noopenner nofollow noreferrer" target="_blank"><span class="visually-hidden">Скачати з Google Play</span></a>
+							</div>
+						</div>
+						<picture>
+							<source srcset="img/placeholder.png" type="image/webp" data-srcset="img/app/phones.webp" />
+							<img class="app__img lozad" src="img/app/phones.png" srcset="img/placeholder.png" data-srcset="img/app/phones.png" alt="Назва відео" />
+						</picture>
+					</div>
+				</div>
+				<div class="prefooter">
+					<div class="container">
+						<div class="prefooter__inner">
+							<h2 class="prefooter__title h2">Які фактори впливають на регулювання розвалу-сходження?</h2>
+							<p class="prefooter__text">
+								Регулювання розвалу-сходження - це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості автомобіля. Існує ряд
+								факторів, які впливають на регулювання розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження.
+								Наприклад, спортивні автомобілі потребують більшого розвалу, ніж Регулювання розвалу-сходження – це процес, який регулює кут між колесами на автомобілі. Це важливо для
+								забезпечення безпеки та керованості автомобіля. Існує ряд факторів, які впливають на регулювання розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів
+								мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні автомобілі потребують більшого розвалу, ніж
+							</p>
+							<button class="prefooter__more _read-more" type="button" data-second-text="Згорнути">Читати повністю</button>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer" id="footer">
+				<div class="container">
+					<div class="footer__wrapper">
+						<div class="footer__top">
+							<div>
+								<div class="footer__logo"><img class="logo" src="img/logo.svg" alt="Логотип Hunters Garage" width="222" height="45" decoding="async" /></div>
+								<ul class="footer__contacts">
+									<li>
+										<a class="footer__link" href="tel:+380676625801"
+											><span class="footer__link-icon"><span class="icon icon_phone icon_s"></span></span><span class="footer__link-text">+38(067) 66-25-801</span></a
+										>
+									</li>
+									<li>
+										<a class="footer__link" href="mailto:service@hunters-garage.com.ua"
+											><span class="footer__link-icon"><span class="icon icon_mail icon_s"></span></span><span class="footer__link-text">service@hunters-garage.com.ua</span></a
+										>
+									</li>
+									<li>
+										<div class="footer__link footer__link_time">
+											<span class="footer__link-icon"><span class="icon icon_time icon_s"></span></span
+											><span class="footer__link-text"
+												>ПН-ПТ: 08:00-19:00 <br />
+												СБ. 09:00-18:00, НД. 09:00-16:00</span
+											>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__cols">
+								<div class="footer__col">
+									<div class="footer__category text-s">Послуги</div>
+									<ul class="footer__list">
+										<li><a class="footer__item" href="service-diagnostics.html">Діагностика</a></li>
+										<li><a class="footer__item" href="service-electricity.html">Електрика</a></li>
+										<li><a class="footer__item" href="service-interior.html">Інтер'єр</a></li>
+										<li><a class="footer__item" href="service-wash.html">Мийка</a></li>
+										<li><a class="footer__item" href="service-certificate.html">Сертифікація</a></li>
+										<li><a class="footer__item" href="service-body.html">Кузовний ремонт та фарбування</a></li>
+										<li><a class="footer__item" href="#">Інші послуги</a></li>
+									</ul>
+								</div>
+								<div class="footer__col">
+									<div class="footer__category text-s">Сторінки</div>
+									<ul class="footer__list">
+										<li><a class="footer__item" href="portfolio.html">Портфоліо</a></li>
+										<li><a class="footer__item" href="#">Акції</a></li>
+										<li><a class="footer__item" href="prices.html">Ціни</a></li>
+										<li><a class="footer__item" href="#">Підбір авто</a></li>
+									</ul>
+								</div>
+								<div class="footer__col">
+									<div class="footer__category text-s">Автосервіс</div>
+									<ul class="footer__list">
+										<li><a class="footer__item" href="about-us.html">Про нас</a></li>
+										<li><a class="footer__item" href="#">Блог</a></li>
+										<li><a class="footer__item" href="#">Вакансії</a></li>
+										<li><a class="footer__item" href="#">Контакти</a></li>
+										<li><a class="footer__item" href="#">Відгуки</a></li>
+										<li><a class="footer__item" href="#">Гарантія</a></li>
+										<li><a class="footer__item" href="#">Оферта</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="footer__bottom">
+							<ul class="social-networks">
+								<li class="social-networks__item">
+									<a class="social-networks__link" href="#" rel="noopenner nofollow noreferrer"
+										><span class="icon icon_facebook"></span><span class="visually-hidden" translate="no">Facebook</span></a
+									>
+								</li>
+								<li class="social-networks__item">
+									<a class="social-networks__link" href="#" rel="noopenner nofollow noreferrer"
+										><span class="icon icon_instagram"></span><span class="visually-hidden" translate="no">Instagram</span></a
+									>
+								</li>
+								<li class="social-networks__item">
+									<a class="social-networks__link" href="#" rel="noopenner nofollow noreferrer"
+										><span class="icon icon_tiktok"></span><span class="visually-hidden" translate="no">Tiktok</span></a
+									>
+								</li>
+								<li class="social-networks__item">
+									<a class="social-networks__link" href="#" rel="noopenner nofollow noreferrer"
+										><span class="icon icon_youtube"></span><span class="visually-hidden" translate="no">Youtube</span></a
+									>
+								</li>
+							</ul>
+							<ul class="pay-methods">
+								<li class="pay-methods__item"><span class="pay-method pay-method_visa"></span><span class="visually-hidden" translate="no">Visa</span></li>
+								<li class="pay-methods__item"><span class="pay-method pay-method_master-card"></span><span class="visually-hidden" translate="no">Master card</span></li>
+								<li class="pay-methods__item"><span class="pay-method pay-method_prostir"></span><span class="visually-hidden" translate="no">Простір</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copyright">© 2024 "Hunter-Garage". Усі права захищені.</div>
+			</footer>
+			<div class="bottom-bar">
+				<div class="bottom-bar__inner">
+					<ul class="bottom-bar__list" role="menubar">
+						<li class="bottom-bar__item" role="none">
+							<a class="bottom-bar__link" href="#" role="menuitem"
+								><span class="bottom-bar__icon"><span class="icon icon_b icon_pricing-outline"></span></span><span class="bottom-bar__text">Ціни</span></a
+							>
+						</li>
+						<li class="bottom-bar__item" role="none">
+							<a class="bottom-bar__link" href="#" role="menuitem"
+								><span class="bottom-bar__icon"><span class="icon icon_b icon_services-outline"></span></span><span class="bottom-bar__text">Послуги</span></a
+							>
+						</li>
+						<li class="bottom-bar__item" role="none">
+							<a class="bottom-bar__link" href="#" role="menuitem"
+								><span class="bottom-bar__icon"><span class="icon icon_b icon_portfolio-outline"></span></span><span class="bottom-bar__text">Портфоліо</span></a
+							>
+						</li>
+						<li class="bottom-bar__item" role="none">
+							<a class="bottom-bar__link" href="#" role="menuitem"
+								><span class="bottom-bar__icon"><span class="icon icon_b icon_sale-outline"></span></span><span class="bottom-bar__text">Акції</span></a
+							>
+						</li>
+						<li class="bottom-bar__item" role="none">
+							<a class="bottom-bar__link" href="#" role="menuitem"
+								><span class="bottom-bar__icon"><span class="icon icon_b icon_map-pin-outline"></span></span><span class="bottom-bar__text">Контакти</span></a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="js/index.bundle.js"></script>
+	</body>
+</html>

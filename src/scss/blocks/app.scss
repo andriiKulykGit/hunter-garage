@@ -1,0 +1,82 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+
+.app {
+	position: relative;
+	background-color: $gray-20;
+	padding: 80px;
+	padding-bottom: 120px;
+	background-image: url("../img/app/lines.svg");
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	margin-bottom: $section-margin;
+
+	&__preview {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		margin-bottom: 16px;
+	}
+
+	&__icon {
+		--size: 7px;
+
+		width: 48px;
+		border-radius: 12px;
+		height: 48px;
+		background-image: repeating-linear-gradient(45deg, transparent, transparent var(--size), #000000 var(--size), #000000 calc(var(--size) * 2));
+		background-color: #fbed20;
+	}
+
+	&__title {
+		margin-bottom: 56px;
+		max-width: 520px;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 120%;
+		color: $gray-100;
+		margin-bottom: 4px;
+	}
+
+	&__btns {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 28px;
+	}
+
+	&__btn {
+		display: inline-flex;
+		width: 196px;
+		height: 60px;
+		border-radius: 13px;
+		border: 1px solid rgba(166, 166, 166, 1);
+		background-position: center;
+		background-repeat: no-repeat;
+
+		&_apple {
+			background-image: url("../img/app/apple.svg");
+		}
+
+		&_google {
+			background-image: url("../img/app/google.svg");
+		}
+	}
+
+	&__img {
+		position: absolute;
+		bottom: 0;
+		right: 80px;
+	}
+
+	.icon {
+		background-color: #FFB45C;
+	}
+}
+
+.stars {
+	display: flex;
+	gap: 4px;
+}

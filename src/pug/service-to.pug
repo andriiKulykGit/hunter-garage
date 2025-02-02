@@ -1,0 +1,72 @@
+extends layouts/layout.pug
+
+block title
+	- var title = "Технічне обслуговування авто";
+
+block content
+	- var title = "Технічне обслуговування авто"
+	- var srcPath = "service/to/hero"
+	- var text = "Hunters Garage запрошує на плановий техогляд. До планового технічного обслуговування входять регламентні перевірки та заміни мастила, фільтрів, свічок, рідин."
+	include blocks/service-hero
+
+	- var srcPath = "service/to/2"
+	- var title = "Важливість ТО"
+	- var text = "Вчасне походження техічного огляду автомобіля необхідне для подовження ресурсу автомобіля. Фахівці Hunters Garage підберуть витратні матеріали згідно з регламентом та запропонують оригінальні та альтернативні бренди."
+	- var showList = false
+	- var showText = true
+	include blocks/fifty-fifty
+
+	.decision
+		.container
+			.decision__wrapper
+				.container.container_1172
+					.decision__inner
+						.decision__col
+							.decision__content
+								h2.h2.decision__title Hunters Garage надає повний комплекс послуг ТО
+								p.text-l.decision__body Під час планового техогляду ми проводимо діагностику та надаємо поради щодо подальшої експлуатації авто та необхідних ремонтів.
+							.decision__btns
+								.btn-wrapper
+									a.btn.btn_yellow(href="#") Замовити послугу
+								.btn-wrapper
+									a.btn.btn_white(href="#") Ціни на послуги
+						.decision__col
+							.decision__media
+								picture
+									source(srcset="img/placeholder.png" data-srcset="img/service/to/3.webp" type="image/webp")
+									img.lozad(src="img/service/to/3.jpg" srcset="img/placeholder.png" data-srcset="img/service/to/3.jpg" alt="Назва відео" width="550")
+
+	- var iconCard1 = "reglament"
+	- var titleCard1 = "Роботи згідно з регламентом"
+	- var iconCard2 = "original"
+	- var titleCard2 = "Оригінальні витратні матеріали"
+	- var iconCard3 = "shield-check"
+	- var titleCard3 = "Гарантія"
+	- var iconCard4 = "quality-control"
+	- var titleCard4 = "Контроль якості"
+
+	- var title = "ТО в Hunters Garage"
+	- var text = "Это текст-\"рыба\", часто используемый в печати и вэб-дизайне."
+	include blocks/diagnostics
+
+	- var slides = [1, 2, 3, 4, 5, 6];
+	include blocks/portfolio
+
+	.services
+		.container
+			.services__title.h2.text-center Сервіси
+			ul.services__grid
+				+card-service("maintenance", "від 750 до 2200 грн.", "Плановий техогляд ")
+				+card-service("tire", "від 750 до 2200 грн.", "Шиномонтаж ")
+				+card-service("engine", "від 750 до 2200 грн.", "Ремонт двигуна та трансмісії")
+				+card-service("suspension", "від 750 до 2200 грн.", "Ремонт підвіски")
+				+card-service("brakes", "від 750 до 2200 грн.", "Ремонт гальівної та рульової систем")
+				+card-service("fuel-system", "від 750 до 2200 грн.", "Ремонт паливної системи")
+				+card-service("cooling-system", "від 750 до 2200 грн.", "Ремонт системи охолодження")
+				+card-service("wheel-alignment", "від 750 до 2200 грн.", "Розвал-сходження")
+
+	include blocks/promo
+
+	include blocks/app
+
+	+prefooter("Які фактори впливають на регулювання розвалу-сходження?", "Регулювання розвалу-сходження - це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості  автомобіля. Існує ряд факторів, які впливають на регулювання  розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні  автомобілі потребують більшого розвалу, ніж Регулювання розвалу-сходження – це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості  автомобіля. Існує ряд факторів, які впливають на регулювання  розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні  автомобілі потребують більшого розвалу, ніж")(class="h2")

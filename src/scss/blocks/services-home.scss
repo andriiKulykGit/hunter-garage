@@ -1,0 +1,26 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+
+.services-home {
+	color: $gray-0;
+	padding-block: $section-margin;
+	background: url(../img/decision-lines.svg) left top no-repeat;
+	background-size: 802px;
+	background-color: $gray-100;
+
+	&__title {
+		margin-bottom: 40px;
+	}
+
+	&__grid {
+		display: grid;
+		gap: 40px;
+		grid-template-columns: repeat(auto-fit, minmax(332px, 1fr));
+		margin-bottom: 56px;
+	}
+
+	&__btns {
+		display: flex;
+		justify-content: center;
+	}
+}

@@ -1,0 +1,67 @@
+extends layouts/layout.pug
+
+block title
+	- var title = "Інші послуги";
+
+block content
+	- var title = "Інші послуги"
+	- var srcPath = "service/other/hero"
+	- var text = "Hunters Garage надає повний комплекс послуг, які стосуються обслуговування автомобіля."
+	include blocks/service-hero
+
+	- var srcPath = "service/other/2"
+	- var title = "Послуги"
+	- var items = ["Діагностика всіх систем автомобіля.", "Обслуговування та ремонт автомобіля.", "Шиномонтаж та зберігання шин.", "Регулювання розвалу-сходження.", "Регулювання розвалу-сходження.", "Капітальний ремонт двигуна.", "Ремонт всіх систем автомобіля.", "Кузовний ремонт та фарбування авто.", "Мийка."]
+	- var showList = true
+	- var showText = false
+	include blocks/fifty-fifty
+
+	.decision
+		.container
+			.decision__wrapper
+				.container.container_1172
+					.decision__inner
+						.decision__col
+							.decision__content
+								h2.h2.decision__title Все, що може знадобитись вашому автомобілю
+								p.text-l.decision__body Також автосервіс надає послуги з доставки автомобіля на сервіс з зручного місця для клієнта, надає підмінні автомобілі та послугу з підбору автомобілів в Україні та США. В ході ремонт у автомобілів автосервіс пропоную запчастини та витратні матеріали
+							.decision__btns
+								.btn-wrapper
+									a.btn.btn_yellow(href="#") Замовити послугу
+								.btn-wrapper
+									a.btn.btn_white(href="#") Ціни на послуги
+						.decision__col
+							.decision__media
+								picture
+									source(srcset="img/placeholder.png" data-srcset="img/service/other/3.webp" type="image/webp")
+									img.lozad(src="img/service/other/3.jpg" srcset="img/placeholder.png" data-srcset="img/service/other/3.jpg" alt="Назва відео" width="550")
+
+	- var iconCard1 = "garage"
+	- var titleCard1 = "Все під одним дахом"
+	- var iconCard2 = "gear-six"
+	- var titleCard2 = "Запчастини"
+	- var iconCard3 = "shield-check"
+	- var titleCard3 = "Гарантія"
+	- var iconCard4 = "quality-control"
+	- var titleCard4 = "Якість"
+
+	- var title = "Hunters Garage – автосервіс повного циклу."
+	- var text = ""
+	include blocks/diagnostics
+
+	- var slides = [1, 2, 3, 4, 5, 6];
+	include blocks/portfolio
+
+	.services
+		.container
+			.services__title.h2.text-center Сервіси
+			ul.services__grid
+				+card-service("duplicate", "990 грн / добу", "Підмінний автомобіль")
+				+card-service("shine", "21000 грн", "Підбір автомобіля")
+				+card-service("concierge", "500 грн.", "Консьєрж-сервіс")
+
+	include blocks/promo
+
+	include blocks/app
+
+	+prefooter("Які фактори впливають на регулювання розвалу-сходження?", "Регулювання розвалу-сходження - це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості  автомобіля. Існує ряд факторів, які впливають на регулювання  розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні  автомобілі потребують більшого розвалу, ніж Регулювання розвалу-сходження – це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості  автомобіля. Існує ряд факторів, які впливають на регулювання  розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні  автомобілі потребують більшого розвалу, ніж")(class="h2")

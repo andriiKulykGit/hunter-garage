@@ -1,0 +1,23 @@
+@use '../base/vars' as *;
+
+.list {
+	display: flex;
+	gap: 12px;
+	flex-direction: column;
+	list-style: none;
+
+	&__li {
+		position: relative;
+		padding-left: 14px;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 8px;
+			left: 0;
+			width: 6px;
+			height: 6px;
+			background-color: currentColor;
+		}
+	}
+}

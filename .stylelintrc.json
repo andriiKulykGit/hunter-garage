@@ -1,0 +1,13 @@
+{
+	"extends": "stylelint-config-standard-scss",
+	"rules": {
+		"declaration-property-value-allowed-list": {
+			"line-height": ["/^\\d+%$/"],
+			"font-size": ["/^\\d+px$/"]
+		},
+		"property-no-vendor-prefix": null,
+		"no-empty-source": null,
+		"unit-allowed-list": ["px", "%", "em", "rem", "vw", "vh", "dvh", "dvw", "vmin", "vmax", "s", "deg"]
+	},
+	"defaultSeverity": "warning"
+}

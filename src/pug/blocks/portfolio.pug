@@ -1,0 +1,21 @@
+mixin slide(slideName)
+	.carousel-cell.carousel__slide
+		picture
+			source(srcset="img/placeholder.png" data-flickity-lazyload-srcset="img/portfolio/" + slideName + ".webp" type="image/webp")
+			img.portfolio__img(src="img/portfolio/" + slideName + ".jpg" srcset="img/placeholder.png" data-flickity-lazyload-srcset="img/portfolio/" + slideName + ".jpg" alt="" height="350" width="467")
+.portfolio
+	.portfolio__bg
+	.container.relative
+		.portfolio__inner
+			h2.portfolio__title.h2 Портфоліо
+			p.portfolio__text Діагностика автомобіля
+			.portfolio__btns
+				button(type="button").carousel-btn.carousel-btn_previous
+					span.visually-hidden Назад
+					span.icon.icon_chevron
+				button(type="button").carousel-btn.carousel-btn_next
+					span.visually-hidden Далі
+					span.icon.icon_chevron
+	.carousel.carousel_portfolio
+		each name in slides
+			+slide(name)

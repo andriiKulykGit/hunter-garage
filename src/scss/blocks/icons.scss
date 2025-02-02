@@ -1,0 +1,134 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+
+$size: var(--size);
+
+.icon {
+	--size: 16px;
+
+	display: inline-block;
+	width: $size;
+	height: $size;
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	aspect-ratio: 1;
+	transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+
+	&_s {
+		--size: 14px;
+	}
+
+	&_m {
+		--size: 20px;
+	}
+
+	&_b {
+		--size: 24px;
+	}
+
+	&_l {
+		--size: 32px;
+	}
+
+	@include new-bg-icon("facebook");
+	@include new-bg-icon("instagram");
+	@include new-bg-icon("sale");
+	@include new-bg-icon("tiktok");
+	@include new-bg-icon("youtube");
+	@include new-mask-icon("1-2");
+	@include new-mask-icon("abrasions");
+	@include new-mask-icon("app");
+	@include new-mask-icon("brakes");
+	@include new-mask-icon("car-dash");
+	@include new-mask-icon("certificate");
+	@include new-mask-icon("check");
+	@include new-mask-icon("chevron-header");
+	@include new-mask-icon("chevron");
+	@include new-mask-icon("coffe");
+	@include new-mask-icon("concierge");
+	@include new-mask-icon("cool");
+	@include new-mask-icon("cooling-system");
+	@include new-mask-icon("crack");
+	@include new-mask-icon("design");
+	@include new-mask-icon("diagnostics-electric");
+	@include new-mask-icon("dop");
+	@include new-mask-icon("duplicate");
+	@include new-mask-icon("easy");
+	@include new-mask-icon("electrical-repair");
+	@include new-mask-icon("engine");
+	@include new-mask-icon("error");
+	@include new-mask-icon("fuel-system");
+	@include new-mask-icon("garage");
+	@include new-mask-icon("gas");
+	@include new-mask-icon("gbo");
+	@include new-mask-icon("gear-six");
+	@include new-mask-icon("headlight");
+	@include new-mask-icon("headlights");
+	@include new-mask-icon("home");
+	@include new-mask-icon("human");
+	@include new-mask-icon("key");
+	@include new-mask-icon("mail");
+	@include new-mask-icon("maintenance");
+	@include new-mask-icon("map-pin-outline");
+	@include new-mask-icon("materials");
+	@include new-mask-icon("medal");
+	@include new-mask-icon("neat");
+	@include new-mask-icon("noise");
+	@include new-mask-icon("original");
+	@include new-mask-icon("paint");
+	@include new-mask-icon("phone");
+	@include new-mask-icon("point");
+	@include new-mask-icon("polishing");
+	@include new-mask-icon("portfolio-outline");
+	@include new-mask-icon("pricing-outline");
+	@include new-mask-icon("quality-control");
+	@include new-mask-icon("quality");
+	@include new-mask-icon("reglament");
+	@include new-mask-icon("repair");
+	@include new-mask-icon("respectful");
+	@include new-mask-icon("rocket");
+	@include new-mask-icon("sale-outline");
+	@include new-mask-icon("screwdriver");
+	@include new-mask-icon("services-outline");
+	@include new-mask-icon("sewing-machine");
+	@include new-mask-icon("shield-check");
+	@include new-mask-icon("shine");
+	@include new-mask-icon("smiley-wink");
+	@include new-mask-icon("sound");
+	@include new-mask-icon("spray");
+	@include new-mask-icon("standox");
+	@include new-mask-icon("star");
+	@include new-mask-icon("suspension");
+	@include new-mask-icon("tech");
+	@include new-mask-icon("technical-inspection");
+	@include new-mask-icon("time");
+	@include new-mask-icon("tire");
+	@include new-mask-icon("true");
+	@include new-mask-icon("usa");
+	@include new-mask-icon("userful");
+	@include new-mask-icon("wheel-alignment");
+	@include new-mask-icon("wheel");
+	@include new-mask-icon("window");
+
+	&-wrapper {
+		background-color: $gray-100;
+		display: grid;
+		place-items: center;
+		width: 48px;
+		height: 48px;
+		color: $primary;
+
+		.icon {
+			background-color: currentcolor;
+		}
+
+		&_yellow {
+			background-color: $primary;
+			color: $gray-100;
+		}
+	}
+}

@@ -1,0 +1,99 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .8);
+	backdrop-filter: blur(12px);
+	padding-block: 24px;
+	z-index: 20;
+	height: var(--header-height);
+
+	&__wrapper {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__col {
+		display: flex;
+		align-items: center;
+		gap: 14px;
+	}
+}
+
+.menu {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	&__list {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+
+	&__item {
+		position: relative;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		color: $gray-0;
+		font-size: 16px;
+		padding: 4px 8px;
+		border-radius: 4px;
+		user-select: none;
+		cursor: pointer;
+		background-color: transparent;
+		border: none;
+
+		@include hover {
+			background-color: $gray-90;
+			text-decoration: none;
+		}
+
+		.icon_chevron-header {
+			background-color: $primary;
+		}
+
+		&[aria-expanded="true"] {
+			.icon {
+				rotate: 180deg;
+			}
+		}
+	}
+}
+
+.phone {
+	display: flex;
+	gap: 4px;
+	align-items: center;
+	line-height: 100%;
+	color: $gray-0;
+	padding: 4px 8px;
+	border-radius: 4px;
+	user-select: none;
+
+	&__text {
+		font-size: 14px;
+	}
+
+	@include hover {
+		background-color: $gray-90;
+		text-decoration: none;
+	}
+
+	.icon {
+		background-color: currentcolor;
+	}
+}

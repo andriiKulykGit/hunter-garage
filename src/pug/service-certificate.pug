@@ -1,0 +1,67 @@
+extends layouts/layout.pug
+
+block title
+	- var title = "Сертифікація";
+
+block content
+	- var title = "Сертифікація"
+	- var srcPath = "service/certificate/hero"
+	- var text = "Згідно з нормативними актами, всі транспортні засоби під час першої реєстрації засобу в Україні, а також під час перереєстрації після переобладнання в обов’язковому порядку."
+	include blocks/service-hero
+
+	- var srcPath = "service/certificate/2"
+	- var title = "Процедура"
+	- var text = "Оформлення сертифіката відбувається за три прості кроки:"
+	- var items = ["Прийняття авто в роботу та перевірка його стану, що займає 15 хвилин.", "Півгодинне проходження випробувань.", "Опрацювання документів та видача готового сертифіката за годину."]
+	- var showList = true
+	- var showText = true
+	include blocks/fifty-fifty
+
+	- var items = ["Title – техпаспорт на автомобіль.", "Invoice – договір купівлі-продажу.", "Митні декларації МД-2, МД-6.", "Кольорова копія або оригінал документу, що посвідчує особу власника авто – паспорт громадянина України, 1-2 сторінки та сторінка реєстрації місця проживання.", "Ідентифікаційний податковий номер власника."]
+	.decision
+		.container
+			.decision__wrapper
+				.container.container_1172
+					.decision__inner
+						.decision__col
+							.decision__content
+								h2.h2.decision__title Документи, необхідні для сертифікації:
+								+list(items)(class="text-l")
+							.decision__btns
+								.btn-wrapper
+									a.btn.btn_yellow(href="#") Замовити послугу
+								.btn-wrapper
+									a.btn.btn_white(href="#") Ціни на послуги
+						.decision__col
+							.decision__media
+								picture
+									source(srcset="img/placeholder.png" data-srcset="img/service/certificate/3.webp" type="image/webp")
+									img.lozad(src="img/service/certificate/3.jpg" srcset="img/placeholder.png" data-srcset="img/service/certificate/3.jpg" alt="Назва відео" width="550")
+
+	- var iconCard1 = "rocket"
+	- var titleCard1 = "Швидкість"
+	- var iconCard2 = "quality"
+	- var titleCard2 = "Якість"
+	- var iconCard3 = "certificate"
+	- var titleCard3 = "Для виїзду за кордон"
+	- var iconCard4 = "technical-inspection"
+	- var titleCard4 = "Обов'язковий техогляд"
+
+	- var title = "Поставити авто на облік"
+	- var text = ""
+	include blocks/diagnostics
+
+	- var slides = [1, 2, 3, 4, 5, 6];
+	include blocks/portfolio
+
+	.services
+		.container
+			.services__title.h2.text-center Сервіси
+			ul.services__grid
+				+card-service("certificate", "від 750 до 2200 грн.", "Сертифікація")
+
+	include blocks/promo
+
+	include blocks/app
+
+	+prefooter("Які фактори впливають на регулювання розвалу-сходження?", "Регулювання розвалу-сходження - це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості  автомобіля. Існує ряд факторів, які впливають на регулювання  розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні  автомобілі потребують більшого розвалу, ніж Регулювання розвалу-сходження – це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості  автомобіля. Існує ряд факторів, які впливають на регулювання  розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні  автомобілі потребують більшого розвалу, ніж")(class="h2")

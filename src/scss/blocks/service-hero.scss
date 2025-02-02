@@ -1,0 +1,51 @@
+@use "../base/vars" as *;
+@use "../base/mixins" as *;
+
+.service-hero {
+	position: relative;
+	color: $gray-0;
+	padding-block: calc($section-margin * 2);
+	min-height: 810px;
+	max-height: 120dvh;
+	overflow: hidden;
+	margin-bottom: $section-margin;
+
+	&__inner {
+		position: relative;
+		z-index: 2;
+		top: 50%;
+		transform: translateY(50%);
+	}
+
+	&__title {
+		margin-bottom: 24px;
+	}
+
+	&__text {
+		margin-bottom: 48px;
+		max-width: 770px;
+	}
+
+	&__breadcrumb {
+		position: absolute;
+		top: calc(20px + var(--header-height));
+	}
+
+	&__btns {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1;
+		width: 100%;
+		min-width: 1920px;
+		max-height: 100%;
+		object-fit: cover;
+	}
+}

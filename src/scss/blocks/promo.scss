@@ -1,0 +1,37 @@
+@use '../base/vars' as *;
+
+.promo {
+	position: relative;
+	background-color: $gray-100;
+	padding: 40px;
+	margin-bottom: $section-margin;
+	color: #fff;
+	max-height: 466px;
+
+	&__img {
+		margin-left: auto;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		inset: 40px;
+		display: flex;
+		flex-direction: column;
+		max-width: 460px;
+	}
+
+	&__subtitle {
+		margin-bottom: 4px;
+	}
+
+	&__title {
+		margin-bottom: 12px;
+		color: $primary;
+	}
+
+	&__text {
+		margin-bottom: 40px;
+	}
+}

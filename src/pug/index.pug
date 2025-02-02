@@ -1,0 +1,25 @@
+extends layouts/layout.pug
+
+block title
+	- var title = "Головна";
+
+block content
+	include blocks/hero
+
+	- var image = 'homepage'
+	- var videoID = 'JGwWNGJdvx8'
+	include blocks/video
+
+	include blocks/promo
+
+	include blocks/advantages
+
+	include blocks/services-home
+
+	include blocks/steps
+
+	include blocks/promo
+
+	include blocks/app
+
+	+prefooter("Hunters Garage – мережа автосервісів повного циклу.", "Hunters Garage – мережа автосервісів, де ваш автомобіль отримує все необхідне: від мийки до капітального ремонту двигуна. Наша задача – надавати такий сервіс, який є бажання рекомендувати  найдорожчим людям. Автосервіси знаходяться в Києві за адресами вул.  Сумська 3, вул. Богатирська, 3Г. Hunters Garage – мережа автосервісів, де ваш автомобіль отримує все необхідне: від мийки до капітального ремонту двигуна. Наша задача – надавати такий сервіс, який є бажання рекомендувати  найдорожчим людям. Автосервіси знаходяться в Києві за адресами вул.  Сумська 3, вул. Богатирська, 3Г.")(class="h6")

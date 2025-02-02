@@ -1,0 +1,42 @@
+@use '../base/vars' as *;
+
+.hero {
+	display: flex;
+	color: $gray-0;
+	background-color: $gray-100;
+	min-height: 810px;
+	max-height: 120dvh;
+
+	&__slide {
+		height: 100%;
+		width: 100%;
+		padding-top: var(--header-height);
+		background-repeat: no-repeat;
+		background-position: center;
+
+		.container {
+			height: 100%;
+		}
+	}
+
+	&__title {
+		margin-bottom: 24px;
+	}
+
+	&__text {
+		margin-bottom: 56px;
+	}
+
+	&__carousel {
+		flex: 1;
+	}
+
+	&__content {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 770px;
+		width: 100%;
+	}
+}

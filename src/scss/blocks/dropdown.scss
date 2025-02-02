@@ -1,0 +1,64 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+
+.dropdown {
+	position: absolute;
+	top: calc(100% + 32px);
+	left: 0;
+	background-color: $gray-0;
+	box-shadow: $shadow;
+	padding: var(--padding);
+	min-width: 200px;
+	list-style: none;
+	z-index: 5;
+    max-width: 369px;
+
+	--padding: 24px;
+
+	&__item {
+		position: relative;
+	}
+
+	&__link {
+		position: relative;
+		display: inline-block;
+		color: $gray-100;
+		padding: 4px 8px;
+		padding-right: 24px;
+		width: 100%;
+		user-select: none;
+		white-space: nowrap;
+
+		@include hover {
+			text-decoration: none;
+			background-color: $gray-20;
+		}
+
+		&[aria-haspopup="true"] {
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: 8px;
+				transform: translateY(-50%);
+				width: 16px;
+				height: 16px;
+				mask-size: contain;
+				mask-repeat: no-repeat;
+				mask-image: url("../img/svgicons/chevron.svg");
+				background-color: currentcolor;
+			}
+		}
+	}
+
+	&_submenu {
+		left: calc(100% + var(--padding));
+		top: 0;
+
+		.dropdown {
+			&__link {
+				padding: 4px 8px;
+			}
+		}
+	}
+}

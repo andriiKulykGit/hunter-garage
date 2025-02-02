@@ -1,0 +1,33 @@
+.services-home
+	.container
+		h2.services-home__title.h2.text-center Послуги
+		.services-home__grid(id="services")
+			+big-card-service("Діагностика автомобіля", "cards/1")
+			+big-card-service("Шиномонтаж", "cards/2")
+			+big-card-service("Технічне обслуговування авто", "cards/3")
+			+big-card-service("Ремонт двигуна та трансмісії", "cards/4")
+			+big-card-service("Ремонт підвіски", "cards/5")
+			+big-card-service("Кузовний ремонт", "cards/6")
+			+big-card-service("Ремонт гальмівної та рульової систем", "cards/7")
+			+big-card-service("Ремонт автомобільної оптики", "cards/8")
+			+big-card-service("Ремонт паливної системи", "cards/9")
+			+big-card-service("Ремонт системи охолодження", "cards/10")
+			+big-card-service("Регулювання розвалу-сходження", "cards/11")
+			+big-card-service("Діагностика та ремонт електричних систем авто", "cards/12")
+			+big-card-service("Заправка, ремонт та обслуговування кондиціонера", "cards/13")(hidden)
+			+big-card-service("Встановлення та обслуговування газобалонного обладнання", "cards/14")(hidden)
+			+big-card-service("Перетяжка салону автомобіля", "cards/15")(hidden)
+			+big-card-service("Фарбування авто", "cards/16")(hidden)
+			+big-card-service("Шумоізоляція авто", "cards/17")(hidden)
+			+big-card-service("Автомийка", "cards/18")(hidden)
+			+big-card-service("Підмінний автомобіль", "cards/19")(hidden)
+			+big-card-service("Підбір авто під замовлення", "cards/20")(hidden)
+			+big-card-service("Авто зі США «під ключ»", "cards/21")(hidden)
+			+big-card-service("Сертифікація переобладнання", "cards/22")(hidden)
+			+big-card-service("Обслуговування корпоративних автопарків", "cards/23")(hidden)
+			+big-card-service("Консьєрж-сервіс", "cards/24")(hidden)
+			+big-card-service("Адаптація авто зі США", "cards/25")(hidden)
+		.services-home__btns
+			.btn-wrapper
+				button.btn.btn_yellow._show-all(href="#" data-target="#services") Показати всі послуги
+

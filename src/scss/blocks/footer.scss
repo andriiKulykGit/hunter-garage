@@ -1,0 +1,197 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+
+.footer {
+	position: relative;
+	background-color: $gray-100;
+	scroll-margin: var(--header-height);
+
+	&__category {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		color: $gray-50;
+		margin-bottom: 20px;
+		font-weight: 700;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		list-style: none;
+	}
+
+	&__item {
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		color: $gray-0;
+		transition: 0.1s color ease-in-out, 0.1s transform ease-in-out;
+		white-space: nowrap;
+
+		&::before {
+			content: "";
+			height: 16px;
+			width: 16px;
+			background-image: url("../img/svgicons/chevron.svg");
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+		}
+
+		@include hover {
+			text-decoration: none;
+			color: $primary;
+			transform: translateX(8px);
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		padding-block: 42px 22px;
+
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+			width: 50%;
+			background-image: url("../img/footer-lines.svg");
+			background-repeat: no-repeat;
+			bottom: 0;
+			top: 0;
+		}
+
+		&::after {
+			left: 0;
+		}
+
+		&::before {
+			right: 0;
+			transform: scaleX(-1);
+		}
+	}
+
+	&__logo {
+		margin-bottom: 32px;
+	}
+
+	&__contacts {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	&__link {
+		display: inline-flex;
+		gap: 8px;
+		color: $gray-0;
+
+		.icon {
+			background-color: $primary;
+		}
+
+		&:not(div, span) {
+			@include hover {
+				text-decoration: underline;
+				text-decoration-color: $primary;
+				text-underline-offset: 4px;
+			}
+		}
+
+		&_time {
+			line-height: 180%;
+		}
+	}
+
+	&__copyright {
+		position: relative;
+		z-index: 1;
+		background-color: $gray-90;
+		color: $gray-0;
+		text-align: center;
+		padding: 32px 0;
+	}
+
+	&__top {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 32px;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__cols {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 32px 172px;
+	}
+
+	&__bottom {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		justify-content: space-between;
+		gap: 32px;
+		flex-wrap: wrap;
+	}
+}
+
+.social-networks {
+	display: flex;
+	gap: 12px;
+	list-style: none;
+
+	&__link {
+		height: 48px;
+		width: 48px;
+		display: grid;
+		place-items: center;
+		border-radius: 50%;
+		border: 1px solid $gray-80;
+		transition: border-color 0.1s ease-in-out;
+
+		@include hover {
+			border-color: $gray-0;
+		}
+	}
+}
+
+.pay-methods {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	gap: 40px;
+	align-items: center;
+}
+
+.pay-method {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	vertical-align: middle;
+
+	&_visa {
+		background-image: url("../img/logos/visa.svg");
+		width: 92px;
+		height: 32px;
+	}
+
+	&_master-card {
+		background-image: url("../img/logos/master-card.svg");
+		width: 48px;
+		height: 30px;
+	}
+
+	&_prostir {
+		background-image: url("../img/logos/prostir.png");
+		width: 180px;
+		height: 30px;
+	}
+}

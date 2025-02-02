@@ -1,0 +1,11 @@
+extends layouts/layout.pug
+
+block title
+	- var title = "Про нас";
+
+block content
+	- var image = 'about-us'
+	- var videoID = 'JGwWNGJdvx8'
+	include blocks/video
+	include blocks/app
+	include blocks/prefooter

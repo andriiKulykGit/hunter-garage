@@ -1,0 +1,18 @@
+.container.container_1172
+	.fifty-fifty
+		div
+			picture
+				source(srcset="img/placeholder.png" data-srcset="img/" + srcPath + ".webp" type="image/webp")
+				img.fifty-fifty__img.lozad(src="img/" + srcPath + ".png" srcset="img/placeholder.png" data-srcset="img/" + srcPath + ".png" alt="" width="550")
+		div
+			h2.fifty-fifty__title.h2=title
+			.fifty-fifty__body.text-l
+				if showText
+					p=text
+				if showList
+					+list(items)
+			.fifty-fifty__btns
+				.btn-wrapper
+					a.btn.btn_yellow(href="#") Замовити послугу
+				.btn-wrapper
+					a.btn.btn_black(href="#") Ціни на послуги

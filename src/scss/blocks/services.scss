@@ -1,0 +1,96 @@
+@use "../base/vars" as *;
+@use "../base/mixins" as *;
+
+.services {
+	position: relative;
+	z-index: 0;
+	padding-block: $section-margin;
+	margin-bottom: $section-margin;
+	background-color: $gray-100;
+	color: $gray-0;
+
+	&__title {
+		margin-bottom: 40px;
+	}
+
+	&__grid {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+		list-style: none;
+	}
+}
+
+.card-service {
+	position: relative;
+	background-color: $gray-90;
+	padding: 56px 40px;
+	width: 100%;
+	max-width: 345px;
+
+	&__head {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		margin-bottom: 24px;
+	}
+
+	&__title {
+		color: $gray-0;
+
+		&::before {
+			position: absolute;
+			content: "";
+			inset: 0;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&__icon {
+		background-color: $primary;
+		padding: 8px;
+	}
+
+	&__text {
+		position: relative;
+		z-index: 1;
+	}
+
+	&::after, &::before {
+		position: absolute;
+		content: "";
+		pointer-events: none;
+	}
+
+	&::after {
+		top: 0;
+		right: 0;
+		width: 80px;
+		height: 80px;
+		background: linear-gradient(45deg, transparent 0%, transparent 49.9%, $gray-100 50%, $gray-100 100%);
+	}
+
+	&::before {
+		z-index: 2;
+		pointer-events: none;
+		width: 24px;
+		height: 24px;
+		top: 12px;
+		right: 12px;
+		background-color: $gray-100;
+		mask-position: center;
+		mask-repeat: no-repeat;
+		mask-image: url("../img/svgicons/arrow.svg");
+		-webkit-mask-image: url("../img/svgicons/arrow.svg");
+	}
+
+	@include hover {
+		&::after {
+			background: linear-gradient(45deg, transparent 0%, transparent 49.9%, $primary 50%, $primary 100%);
+		}
+	}
+}

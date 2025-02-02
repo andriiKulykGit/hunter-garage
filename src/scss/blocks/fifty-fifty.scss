@@ -1,0 +1,31 @@
+@use "../base/vars" as *;
+
+.fifty-fifty {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(332px, 1fr));
+	gap: 24px 40px;
+	margin-bottom: $section-margin;
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin-bottom: 48px;
+	}
+
+	&__btns {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px 20px;
+	}
+
+	&__img {
+		position: sticky;
+		top: calc(var(--header-height) + 20px);
+		width: 100%;
+	}
+}

@@ -1,0 +1,68 @@
+extends layouts/layout.pug
+
+block title
+	- var title = "Кузовний ремонт та фарбування";
+
+block content
+	- var title = "Кузовний ремонт та фарбування"
+	- var srcPath = "service/body/hero"
+	- var text = "Кузовний ремонт – це можливість усунути пошкодження, спричинені аваріями, градом, корозією або іншими факторами, відновити зовнішній вигляд та структурну цілісність автомобіля."
+	include blocks/service-hero
+
+	- var srcPath = "service/body/2"
+	- var title = "Послуги"
+	- var text = "Hunters Garage  надає повний спектр послуг з ремонту кузова та рихтування, зокрема проводить:"
+	- var items = ["Заміну або відновлення пошкоджених деталей кузова.", "Ремонт сколів, тріщин та подряпин лакофарбового покриття.", "Відновлення поверхні кузова після корозії.", "Рихтування кузова.", "Полірування кузова автомобіля", "Встановлення дефлекторів та інших аксесуарів кузова"]
+	- var showList = true
+	- var showText = true
+	include blocks/fifty-fifty
+
+	.decision
+		.container
+			.decision__wrapper
+				.container.container_1172
+					.decision__inner
+						.decision__col
+							.decision__content
+								h2.h2.decision__title Документи, необхідні для сертифікації:
+								p.text-l.decision__body Обидва автосервіси Hunters Garage обладнані фарбувальними камерами та стапелями. Потужності автоцентрів дозволяють рихтувати та фарбувати одночасно десятки автомобілів, що гарантує відсутність черг на обслуговування та його швидкість.
+							.decision__btns
+								.btn-wrapper
+									a.btn.btn_yellow(href="#") Замовити послугу
+								.btn-wrapper
+									a.btn.btn_white(href="#") Ціни на послуги
+						.decision__col
+							.decision__media
+								picture
+									source(srcset="img/placeholder.png" data-srcset="img/service/body/3.webp" type="image/webp")
+									img.lozad(src="img/service/body/3.jpg" srcset="img/placeholder.png" data-srcset="img/service/body/3.jpg" alt="Назва відео" width="550")
+
+	- var iconCard1 = "reglament"
+	- var titleCard1 = "Робота зі страховими"
+	- var iconCard2 = "gear-six"
+	- var titleCard2 = "Підбір запчастин "
+	- var iconCard3 = "standox"
+	- var titleCard3 = "Фарби Standox"
+	- var iconCard4 = "shield-check"
+	- var titleCard4 = "Гарантія якості"
+
+	- var title = "Переваги кузовного ремонту "
+	- var text = ""
+	include blocks/diagnostics
+
+	- var slides = [1, 2, 3, 4, 5, 6];
+	include blocks/portfolio
+
+	.services
+		.container
+			.services__title.h2.text-center Сервіси
+			ul.services__grid
+				+card-service("repair", "від 750 до 2200 грн.", "Рихтвання")
+				+card-service("point", "від 750 до 2200 грн.", "Фарбування")
+				+card-service("polishing", "від 750 до 2200 грн.", "Полірування")
+
+	include blocks/promo
+
+	include blocks/app
+
+	+prefooter("Які фактори впливають на регулювання розвалу-сходження?", "Регулювання розвалу-сходження - це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості  автомобіля. Існує ряд факторів, які впливають на регулювання  розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні  автомобілі потребують більшого розвалу, ніж Регулювання розвалу-сходження – це процес, який регулює кут між колесами на автомобілі. Це важливо для забезпечення безпеки та керованості  автомобіля. Існує ряд факторів, які впливають на регулювання  розвалу-сходження, зокрема: Тип автомобіля. Різні типи автомобілів мають різні потреби в регулюванні розвалу-сходження. Наприклад, спортивні  автомобілі потребують більшого розвалу, ніж")(class="h2")

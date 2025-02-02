@@ -1,0 +1,13 @@
+if breadcrumbWhite
+	- var addClass = "breadcrumb_white"
+nav.breadcrumb(class=addClass aria-label="Навігація")
+	h2.visually-hidden Навігація
+	ol.breadcrumb__list
+		li.breadcrumb__item
+			a.breadcrumb__link(href="#")
+				span.visually-hidden Гровна сторінка
+				span.icon.icon_home
+		li.breadcrumb__item
+			a.breadcrumb__link(href="#") Портфоліо
+		li.breadcrumb__item
+			a.breadcrumb__link(href="#" aria-current="page") Діагностика

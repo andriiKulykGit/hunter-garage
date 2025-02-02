@@ -1,0 +1,10 @@
+.pswp {
+	&__youtube {
+		&-video {
+			&-container {
+				display: grid;
+				place-items: center;
+			}
+		}
+	}
+}

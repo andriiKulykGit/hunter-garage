@@ -1,0 +1,41 @@
+.container {
+	margin: 0 auto;
+	padding: 0 var(--container-padding);
+	max-width: var(--container-width);
+	width: 100%;
+
+	&_1172 {
+		max-width: 1172px;
+	}
+}
+
+.container-full {
+	padding: 0 var(--container-padding);
+	max-width: 100%;
+}
+
+.container-right {
+	padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+}
+
+.container-left {
+	padding-right: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+}
+
+.container-half-left {
+	padding-right: calc(
+		(100% - var(--container-width)) / 2 + (var(--container-width) / 2)
+	);
+	padding-left: calc(
+		(100% - var(--container-width)) / 2 + var(--container-padding)
+	);
+}
+
+.container-half-right {
+	padding-left: calc(
+		(100% - var(--container-width)) / 2 + (var(--container-width) / 2)
+	);
+	padding-right: calc(
+		(100% - var(--container-width)) / 2 + var(--container-padding)
+	);
+}

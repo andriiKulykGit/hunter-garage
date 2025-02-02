@@ -1,0 +1,12 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+
+.tag {
+	display: inline-flex;
+	padding: 2px 8px;
+	border-radius: 12px;
+	background-color: rgba(26, 26, 26, 0.6);
+	color: $gray-0;
+	font-size: 14px;
+	backdrop-filter: blur(12px);
+}

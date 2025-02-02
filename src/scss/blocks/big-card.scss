@@ -1,0 +1,83 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+
+.big-card {
+	position: relative;
+	overflow: hidden;
+
+	&__tag {
+		position: absolute;
+		left: 24px;
+		top: 24px;
+	}
+
+	&__img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		transition: 0.1s scale ease-in-out;
+	}
+
+	&__inner {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		min-height: 86px;
+		display: flex;
+		align-items: center;
+		padding-inline: 24px;
+		backdrop-filter: blur(12px);
+		background-color: rgb(26 26 26 / 60%);
+	}
+
+	&__link {
+		position: absolute;
+		inset: 0;
+	}
+
+	&::after,
+	&::before {
+		position: absolute;
+		content: "";
+		pointer-events: none;
+	}
+
+	&::after {
+		top: 0;
+		right: 0;
+		width: 80px;
+		height: 80px;
+	}
+
+	&::before {
+		z-index: 2;
+		pointer-events: none;
+		width: 24px;
+		height: 24px;
+		top: 12px;
+		right: 12px;
+		background-color: $gray-100;
+		mask-position: center;
+		mask-repeat: no-repeat;
+		mask-image: url("../img/svgicons/arrow.svg");
+		-webkit-mask-image: url("../img/svgicons/arrow.svg");
+		opacity: 0;
+	}
+
+	@include hover {
+		&::after {
+			background: linear-gradient(45deg, transparent 0%, transparent 49.9%, $primary 50%, $primary 100%);
+		}
+
+		&::before {
+			opacity: 1;
+	}
+
+		.big-card {
+			&__img {
+				scale: 1.1;
+			}
+		}
+	}
+}

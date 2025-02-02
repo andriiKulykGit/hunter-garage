@@ -1,0 +1,62 @@
+@use '../base/vars' as *;
+
+.breadcrumb {
+	position: relative;
+	z-index: 2;
+	color: $gray-100;
+
+	&__list {
+		list-style: none;
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		&:not(:last-of-type) {
+			padding-right: 40px;
+
+			&::after {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 12px;
+				content: "";
+				width: 16px;
+				height: 16px;
+				mask-size: contain;
+				mask-repeat: no-repeat;
+				mask-image: url("../img/svgicons/chevron.svg");
+				background-color: currentcolor;
+			}
+		}
+	}
+
+	&__link {
+		display: flex;
+		color: inherit;
+
+		.icon {
+			background-color: currentcolor;
+		}
+
+		&[aria-current="page"] {
+			color: $gray-70;
+		}
+	}
+
+	&_white {
+		color: $gray-0;
+
+		.breadcrumb {
+			&__link {
+				&[aria-current="page"] {
+					color: $gray-50;
+				}
+			}
+		}
+	}
+}

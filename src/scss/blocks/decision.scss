@@ -1,0 +1,49 @@
+@use "../base/vars" as *;
+@use "../base/mixins" as *;
+
+.decision {
+	color: $gray-0;
+
+	&__wrapper {
+		padding-block: $section-margin;
+		background-color: $gray-100;
+		background-image: url("../img/decision-lines.svg");
+		background-position: top right;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin-bottom: 48px;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 24px 40px;
+	}
+
+	&__col {
+		flex: 1;
+	}
+
+	&__btns {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px 20px;
+	}
+
+	&__media {
+		position: sticky;
+		top: calc(var(--header-height) + 20px);
+	}
+}

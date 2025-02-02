@@ -1,0 +1,36 @@
+@use '../base/vars' as *;
+
+.controll {
+	max-width: 100dvw;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	gap: 16px;
+	right: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+	left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+	z-index: 1;
+}
+
+.progress {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 310px;
+	height: 2px;
+	border: none;
+	color: $primary;
+
+	&::-webkit-progress-bar {
+		background: rgba(255, 255, 255, 0.5);
+	}
+
+	&::-webkit-progress-value {
+		background: $primary;
+	}
+
+	&::-moz-progress-bar {
+		background: $primary;
+	}
+}

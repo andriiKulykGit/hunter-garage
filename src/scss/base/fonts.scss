@@ -1,0 +1,12 @@
+@mixin font($size, $weight) {
+	@font-face {
+		font-family: Play;
+		font-display: swap;
+		src: local("Play"), url("../fonts/Play-#{$weight}.woff2") format("woff2");
+		font-weight: $size;
+		font-style: normal;
+	}
+}
+
+@include font(400, "Regular");
+@include font(700, "Bold");

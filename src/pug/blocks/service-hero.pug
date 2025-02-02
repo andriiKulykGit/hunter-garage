@@ -1,0 +1,23 @@
+.service-hero
+	picture
+		source(srcset="img/placeholder.png" data-srcset="img/" + srcPath + ".webp" type="image/webp")
+		img.service-hero__bg.lozad(src="img/" + srcPath + ".jpg" srcset="img/placeholder.png" data-srcset="img/" + srcPath + ".jpg" alt="" width="1920")
+	.container
+		.service-hero__breadcrumb
+			- var breadcrumbWhite = true
+			include ../blocks/breadcrumb
+		section.service-hero__inner
+			if bubble
+				.bubble.bubble_service
+					div
+						.h5 від
+						div
+							span.display-1 500
+							span.h5  грн.
+			h1.service-hero__title.display-1=title
+			p.service-hero__text=text
+			.service-hero__btns
+				.btn-wrapper
+					a.btn.btn_yellow(href="#") Онлайн-запис
+				.btn-wrapper
+					a.btn.btn_white(href="#") Ціни на послуги
