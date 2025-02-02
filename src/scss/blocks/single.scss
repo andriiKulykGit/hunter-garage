@@ -46,6 +46,18 @@
 		}
 	}
 
+	&__sale {
+		display: grid;
+		gap: 40px;
+		grid-template-columns: repeat(2, 1fr);
+
+		.big-card {
+			&::after {
+				background: linear-gradient(45deg, transparent 0%, transparent 49.9%, var(--single-bg) 50%, var(--single-bg) 100%);
+			}
+		}
+	}
+
 	&__title {
 		margin-bottom: 40px;
 	}

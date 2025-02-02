@@ -1,0 +1,20 @@
+extends layouts/layout.pug
+
+block title
+	- var title = "Акції";
+
+
+block content
+	.single
+		.container
+			.single__body
+				.single__breadcrumb
+					include ./blocks/breadcrumb
+				section
+					.single__title
+						h1.h1 Акції
+					.single__sale
+						+big-card-service("Оновлення салону автомобіля", "sale/1", "Діє до 31.01.2025")
+						+big-card-service("Умови обслуговування військових автомобілів", "sale/2", "Діє до 31.01.2025")
+						+big-card-service("Перевірка авто перед зимою – 1025 грн.", "sale/3", "Діє до 31.01.2025")
+						+big-card-service("Перевірка авто перед придбанням", "sale/4", "Діє до 31.01.2025")
