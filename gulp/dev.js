@@ -79,7 +79,7 @@ gulp.task("sass:dev", function() {
 		.pipe(groupMedia())
 		.pipe(replace(/(['"]?)(\.\.\/)+(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/gi, "$1$2$3$4$6$1"))
 		// .pipe(sourceMaps.write())
-		.pipe(csso())
+		// .pipe(csso())
 		.pipe(gulp.dest("./build/css/"))
 })
 
