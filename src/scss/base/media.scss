@@ -241,6 +241,10 @@
 			grid-template-columns: repeat(2, 1fr);
 			gap: 8px;
 		}
+
+		&__title {
+			margin-bottom: 16px;
+		}
 	}
 
 	.advantage {

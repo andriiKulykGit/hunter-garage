@@ -1,0 +1,25 @@
+extends layouts/layout.pug
+
+block title
+	- var title = "Послуги";
+
+
+block content
+	.single
+		.container
+			.single__body
+				.single__breadcrumb
+					include ./blocks/breadcrumb
+				section
+					.single__title
+						h1.h1 Послуги
+					.services-home__grid
+						+big-card-service("Діагностика автомобіля", "cards/1")
+						+big-card-service("Шиномонтаж", "cards/2")
+						+big-card-service("Технічне обслуговування авто", "cards/3")
+						+big-card-service("Ремонт двигуна та трансмісії", "cards/4")
+						+big-card-service("Ремонт підвіски", "cards/5")
+						+big-card-service("Кузовний ремонт", "cards/6")
+						+big-card-service("Ремонт гальмівної та рульової систем", "cards/7")
+						+big-card-service("Ремонт автомобільної оптики", "cards/8")
+						+big-card-service("Ремонт паливної системи", "cards/9")
