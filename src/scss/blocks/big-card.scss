@@ -4,6 +4,9 @@
 .big-card {
 	position: relative;
 	overflow: hidden;
+	color: $gray-0;
+	max-height: 500px;
+	height: 500px;
 
 	&__tag {
 		position: absolute;
@@ -48,6 +51,7 @@
 		right: 0;
 		width: 80px;
 		height: 80px;
+		background: linear-gradient(45deg, transparent 0%, transparent 49.9%, $gray-100 50%, $gray-100 100%);
 	}
 
 	&::before {

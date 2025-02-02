@@ -227,6 +227,17 @@
 		}
 	}
 
+	.single {
+		&__grid {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 8px;
+
+			.big-card {
+				grid-column: auto !important;
+			}
+		}
+	}
+
 	.advantage {
 		padding: 20px;
 	}
@@ -244,9 +255,26 @@
 	}
 
 	.big-card {
+		min-height: auto;
+		height: 186px;
+
 		&__inner {
 			min-height: 56px;
 			padding: 6px 12px;
+			font-size: 14px;
+		}
+
+		&::after {
+			width: 30px;
+			height: 30px;
+		}
+
+		&::before {
+			width: 16px;
+			height: 16px;
+			top: 2px;
+			right: 2px;
+			mask-size: 16px;
 		}
 	}
 

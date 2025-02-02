@@ -1211,6 +1211,9 @@ a {
 .big-card {
   position: relative;
   overflow: hidden;
+  color: var(--gray-0);
+  max-height: 500px;
+  height: 500px;
 }
 
 .big-card__tag {
@@ -1263,6 +1266,7 @@ a {
   right: 0;
   width: 80px;
   height: 80px;
+  background: linear-gradient(45deg, transparent 0%, transparent 49.9%, var(--gray-100) 50%, var(--gray-100) 100%);
 }
 
 .big-card::before {
@@ -2960,7 +2964,6 @@ a {
   padding: 40px;
   margin-bottom: var(--section-margin);
   color: #fff;
-  max-height: 466px;
 }
 
 .promo__img {
@@ -3233,6 +3236,60 @@ a {
 
 .steps {
   margin-bottom: var(--section-margin);
+}
+
+/* Base */
+
+.single {
+  --single-bg: var(--gray-0);
+  padding-top: var(--header-height);
+  padding-bottom: var(--section-margin);
+}
+
+.single__body {
+  padding-top: 12px;
+}
+
+.single__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 40px;
+}
+
+.single__grid .big-card:nth-of-type(6n+1) {
+  grid-column: 1/4;
+}
+
+.single__grid .big-card:nth-of-type(6n+2) {
+  grid-column: 4/-1;
+}
+
+.single__grid .big-card:nth-of-type(6n+3) {
+  grid-column: 1/3;
+}
+
+.single__grid .big-card:nth-of-type(6n+4) {
+  grid-column: 3/5;
+}
+
+.single__grid .big-card:nth-of-type(6n+5) {
+  grid-column: 5/-1;
+}
+
+.single__grid .big-card:nth-of-type(6n) {
+  grid-column: 1/-1;
+}
+
+.single__grid .big-card::after {
+  background: linear-gradient(45deg, transparent 0%, transparent 49.9%, var(--single-bg) 50%, var(--single-bg) 100%);
+}
+
+.single__title {
+  margin-bottom: 40px;
+}
+
+.single__breadcrumb {
+  margin-bottom: 24px;
 }
 
 /* Base */
@@ -3659,6 +3716,15 @@ a {
     flex-direction: column;
   }
 
+  .single__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .single__grid .big-card {
+    grid-column: auto !important;
+  }
+
   .advantage {
     padding: 20px;
   }
@@ -3673,9 +3739,29 @@ a {
     margin-bottom: 24px;
   }
 
+  .big-card {
+    min-height: auto;
+    height: 186px;
+  }
+
   .big-card__inner {
     min-height: 56px;
     padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .big-card::after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .big-card::before {
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    right: 2px;
+    -webkit-mask-size: 16px;
+    mask-size: 16px;
   }
 
   .decision__wrapper {

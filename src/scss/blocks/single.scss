@@ -1,0 +1,56 @@
+@use '../base/vars' as *;
+
+.single {
+	--single-bg: var(--gray-0);
+
+	padding-top: var(--header-height);
+	padding-bottom: $section-margin;
+
+	&__body {
+		padding-top: 12px;
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 40px;
+
+		.big-card {
+			&:nth-of-type(6n+1) {
+				grid-column: 1 / 4;
+			}
+
+			&:nth-of-type(6n+2) {
+				grid-column: 4 / -1;
+			}
+
+			&:nth-of-type(6n+3) {
+				grid-column: 1 / 3;
+			}
+
+			&:nth-of-type(6n+4) {
+				grid-column: 3 / 5;
+			}
+
+			&:nth-of-type(6n+5) {
+				grid-column: 5 / -1;
+			}
+
+			&:nth-of-type(6n) {
+				grid-column: 1 / -1;
+			}
+
+			&::after {
+				background: linear-gradient(45deg, transparent 0%, transparent 49.9%, var(--single-bg) 50%, var(--single-bg) 100%);
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: 40px;
+	}
+
+	&__breadcrumb {
+		margin-bottom: 24px;
+	}
+}

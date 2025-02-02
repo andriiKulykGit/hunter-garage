@@ -5,4 +5,30 @@ block title
 
 
 block content
-	div Портфоліо
+	.single
+		.container
+			.single__body
+				.single__breadcrumb
+					include ./blocks/breadcrumb
+				section
+					.single__title
+						h1.h1 Портфоліо
+					.single__grid
+						+big-card-service("Hunters Garage на Сумській", "portfolio-page/1")
+						+big-card-service("Hunters Garage на Богатирській", "portfolio-page/2")
+						+big-card-service("Ательє", "portfolio-page/3")
+						+big-card-service("Додаткове обладнання", "portfolio-page/4")
+						+big-card-service("Технічне обслуговування", "cards/3")
+						+big-card-service("Світло фар", "portfolio-page/6")
+						+big-card-service("Розвал-сходження", "portfolio-page/7")
+						+big-card-service("Hunters Garage на Богатирській", "portfolio-page/8")
+						+big-card-service("Обслуговування автокондиціонера", "portfolio-page/9")
+						+big-card-service("Шиномонтаж", "cards/2")
+						+big-card-service("Ремонт кузова", "portfolio-page/11")
+						+big-card-service("Автомийка", "portfolio-page/12")
+						+big-card-service("Сертифікація", "portfolio-page/13")
+						+big-card-service("Ремонт двигуна", "portfolio-page/14")
+						+big-card-service("Ремонт підвіски", "cards/1")
+						+big-card-service("Автоелектрика", "cards/12")
+						+big-card-service("Рихтувальні роботи", "portfolio-page/17")
+						+big-card-service("Малярні роботи", "portfolio-page/18")
