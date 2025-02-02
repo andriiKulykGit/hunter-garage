@@ -158,6 +158,12 @@
 		--section-margin: 56px;
 	}
 
+	.article {
+		&__title {
+			margin-bottom: 16px;
+		}
+	}
+
 	.bubble {
 		&_service {
 			position: static;
@@ -245,6 +251,11 @@
 		&__title {
 			margin-bottom: 16px;
 		}
+	}
+
+	.block {
+		padding: 20px;
+		flex-direction: column;
 	}
 
 	.advantage {
@@ -418,6 +429,12 @@
 	.video {
 		&__play {
 			transform: translate(-50%, -50%) scale(0.5);
+		}
+	}
+
+	.prefooter {
+		&__title {
+			font-size: 22px;
 		}
 	}
 }

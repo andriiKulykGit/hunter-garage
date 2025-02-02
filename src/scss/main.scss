@@ -4,6 +4,7 @@
 /* Libs */
 @use '../../node_modules/photoswipe/dist/photoswipe.css';
 @use '../../node_modules/flickity/css/flickity.css';
+@use '../../node_modules/tippy.js/dist/tippy.css';
 // @use '../../node_modules/flickity-fade/flickity-fade.css';
 
 /* Base */
@@ -12,17 +13,19 @@
 @use './base/mixins';
 @use './base/fonts';
 @use './base/base';
-@use './base/utils';
 @use './base/containers';
 @use './base/text';
+@use './base/utils';
 
 /* Blocks */
 @use './blocks/advantage';
+@use './blocks/article';
 @use './blocks/app';
 @use './blocks/big-card';
 @use './blocks/bottom-bar';
 @use './blocks/breadcrumb';
 @use './blocks/btn';
+@use './blocks/blocks';
 @use './blocks/bubble';
 @use './blocks/carousel';
 @use './blocks/controll';
@@ -34,6 +37,7 @@
 @use './blocks/header';
 @use './blocks/hero';
 @use './blocks/icons';
+@use './blocks/input';
 @use './blocks/list';
 @use './blocks/portfolio';
 @use './blocks/prefooter';
@@ -45,7 +49,9 @@
 @use './blocks/services';
 @use './blocks/steps';
 @use './blocks/single';
+@use './blocks/table';
 @use './blocks/tag';
+@use './blocks/tooltip';
 @use './blocks/video';
 
 /* Media queries (must be last) */

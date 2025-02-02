@@ -1,0 +1,27 @@
+@use '../base/vars' as *;
+
+.blocks {
+	margin-bottom: $section-margin;
+}
+
+.block {
+	padding: 40px;
+	display: flex;
+	gap: 20px;
+
+	&__col {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		flex: 1;
+
+		&_left {
+			max-width: 520px;
+		}
+
+	}
+
+	&:nth-child(even) {
+		background-color: $gray-20;
+	}
+}

@@ -55,6 +55,7 @@
 		"flickity": "^3.0.0",
 		"flickity-bg-lazyload": "^2.0.0",
 		"flickity-fade": "^2.0.0",
-		"photoswipe": "^5.4.4"
+		"photoswipe": "^5.4.4",
+		"tippy.js": "^6.3.7"
 	}
 }

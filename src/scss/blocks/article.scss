@@ -1,0 +1,19 @@
+@use '../base/vars' as *;
+
+.article {
+	margin-bottom: $section-margin;
+
+	&__title {
+		margin-bottom: 64px;
+	}
+
+	&__table {
+		margin-bottom: 40px;
+	}
+
+	&__text {
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+	}
+}

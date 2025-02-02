@@ -47,7 +47,11 @@
 }
 
 .bold {
-	font-weight: 700;
+	font-weight: 700 !important;
+}
+
+.normal {
+	font-weight: normal;
 }
 
 .accent-color {

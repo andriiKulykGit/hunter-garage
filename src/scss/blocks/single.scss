@@ -80,7 +80,15 @@
 	}
 
 	&__title {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		column-gap: 25px;
 		margin-bottom: 40px;
+	}
+
+	&__subtitle {
+		margin-top: 14px;
 	}
 
 	&__breadcrumb {

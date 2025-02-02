@@ -1,0 +1,20 @@
+@use '../base/vars.scss' as *;
+
+.tippy {
+	&-box {
+		box-shadow: $shadow;
+		border-radius: 4px;
+		background-color: $gray-0;
+		color: $gray-100;
+		font-size: 14px;
+		text-align: center;
+	}
+
+	&-content {
+		padding: 8px 24px;
+	}
+
+	&-arrow {
+		color: $gray-0;
+	}
+}

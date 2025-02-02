@@ -1,0 +1,29 @@
+@use '../base/vars' as *;
+
+.table {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	width: 100%;
+	border-collapse: collapse;
+
+	th,
+	td {
+		padding: 16px 12px;
+		font-weight: 400;
+	}
+
+	th {
+		text-align: left;
+	}
+
+	td {
+		text-align: right;
+	}
+
+	&__row {
+		&:nth-child(odd) {
+			background-color: $gray-20;
+		}
+	}
+}
