@@ -3739,23 +3739,23 @@ a {
   gap: 40px;
 }
 
-.single__grid .big-card:nth-of-type(6n+1) {
+.single__grid .big-card:nth-of-type(6n + 1) {
   grid-column: 1/4;
 }
 
-.single__grid .big-card:nth-of-type(6n+2) {
+.single__grid .big-card:nth-of-type(6n + 2) {
   grid-column: 4/-1;
 }
 
-.single__grid .big-card:nth-of-type(6n+3) {
+.single__grid .big-card:nth-of-type(6n + 3) {
   grid-column: 1/3;
 }
 
-.single__grid .big-card:nth-of-type(6n+4) {
+.single__grid .big-card:nth-of-type(6n + 4) {
   grid-column: 3/5;
 }
 
-.single__grid .big-card:nth-of-type(6n+5) {
+.single__grid .big-card:nth-of-type(6n + 5) {
   grid-column: 5/-1;
 }
 
@@ -3819,6 +3819,48 @@ a {
 
 .single__breadcrumb {
   margin-bottom: 24px;
+}
+
+.single__portfolio {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.single-card {
+  position: relative;
+}
+
+.single-card::after,
+.single-card::before {
+  position: absolute;
+  content: "";
+  pointer-events: none;
+}
+
+.single-card::after {
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(45deg, transparent 0%, transparent 49.9%, var(--gray-0) 50%, var(--gray-0) 100%);
+}
+
+.single-card::before {
+  z-index: 2;
+  pointer-events: none;
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  right: 12px;
+  background-color: var(--gray-100);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-image: url("../img/svgicons/arrow.svg");
+  -webkit-mask-image: url("../img/svgicons/arrow.svg");
+  opacity: 0;
 }
 
 /* Base */
@@ -4191,6 +4233,14 @@ a {
 
   .card-service:hover::after {
     background: linear-gradient(45deg, transparent 0%, transparent 49.9%, var(--primary) 50%, var(--primary) 100%);
+  }
+
+  .single-card:hover::after {
+    background: linear-gradient(45deg, transparent 0%, transparent 49.9%, var(--primary) 50%, var(--primary) 100%);
+  }
+
+  .single-card:hover::before {
+    opacity: 1;
   }
 
   .video__link:hover + .video__play {

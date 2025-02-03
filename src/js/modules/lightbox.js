@@ -1,5 +1,11 @@
 import PhotoSwipeLightbox from "photoswipe/lightbox"
 
+const portfolioGalley = new PhotoSwipeLightbox({
+	gallery: "#portfolio-gallery",
+	children: 'a',
+	pswpModule: () => import("photoswipe"),
+})
+
 const videoPlayer = new PhotoSwipeLightbox({
 	gallery: ".video",
 	children: ".video__link",
@@ -53,4 +59,4 @@ function generateURL(id) {
 	return "https://www.youtube.com/embed/" + id + query
 }
 
-export default videoPlayer
+export { videoPlayer, portfolioGalley }

@@ -36,3 +36,9 @@ mixin big-card-service(title, img, tag)
 		if tag
 			.big-card__tag
 				span.tag= tag
+
+mixin single-card(img)
+	a.single-card(href="img/single/" + img + ".webp" data-pswp-width="453" data-pswp-height="255" data-cropped="true" target="_blank")
+		picture
+			source(srcset="img/placeholder.png" data-srcset="img/single/" + img + ".webp" type="image/webp")
+			img.single-card__img.lozad(src="img/single/" + img + ".png" srcset="img/placeholder.png" data-srcset="img/single/" + img + ".png" alt="" width="453")
