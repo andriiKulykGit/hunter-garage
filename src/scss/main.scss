@@ -18,14 +18,15 @@
 @use './base/utils';
 
 /* Blocks */
+@use './blocks/about-us';
 @use './blocks/advantage';
-@use './blocks/article';
 @use './blocks/app';
+@use './blocks/article';
 @use './blocks/big-card';
+@use './blocks/blocks';
 @use './blocks/bottom-bar';
 @use './blocks/breadcrumb';
 @use './blocks/btn';
-@use './blocks/blocks';
 @use './blocks/bubble';
 @use './blocks/carousel';
 @use './blocks/controll';
@@ -37,8 +38,11 @@
 @use './blocks/header';
 @use './blocks/hero';
 @use './blocks/icons';
+@use './blocks/info';
 @use './blocks/input';
 @use './blocks/list';
+@use './blocks/net';
+@use './blocks/philosophie';
 @use './blocks/portfolio';
 @use './blocks/prefooter';
 @use './blocks/promo';
@@ -47,10 +51,11 @@
 @use './blocks/service-hero';
 @use './blocks/services-home';
 @use './blocks/services';
-@use './blocks/steps';
 @use './blocks/single';
+@use './blocks/steps';
 @use './blocks/table';
 @use './blocks/tag';
+@use './blocks/team';
 @use './blocks/tooltip';
 @use './blocks/video';
 

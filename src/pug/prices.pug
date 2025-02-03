@@ -5,4 +5,30 @@ block title
 
 
 block content
-	div Ціни
+	.single
+		.container
+			.single__body
+				.single__breadcrumb
+					include ./blocks/breadcrumb
+				section
+					.single__title
+						h1.h1.normal Ціни
+						h2.h5.single__subtitle Ремонт двигуна та трансмісії
+					.search__search
+						label.input
+							input.input__field(list="services" type="text" placeholder="Введіть назву послуги" required)
+							span.input__icon
+								span.icon.icon_search.icon_m
+						datalist#services
+							option(value="Діагностика автомобіля")
+							option(value="Шиномонтаж")
+							option(value="Технічне обслуговування авто")
+							option(value="Ремонт двигуна та трансмісії")
+							option(value="Ремонт підвіски")
+							option(value="Кузовний ремонт")
+							option(value="Ремонт гальмівної та рульової систем")
+							option(value="Ремонт автомобільної оптики")
+							option(value="Ремонт паливної системи")
+							option(value="Ремонт системи охолодження")
+							option(value="Ремонт системи вентиляції")
+	include ./blocks/app.pug

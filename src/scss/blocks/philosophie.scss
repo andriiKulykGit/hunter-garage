@@ -1,0 +1,109 @@
+@use '../base/vars.scss' as *;
+
+.philosophie {
+	padding-block: calc($section-margin + $section-margin / 2);
+	margin-bottom: $section-margin;
+	background: url(../img/philosophie-bg.webp) no-repeat;
+	background-position: center 640px;
+	background-color: $gray-100;
+	color: $gray-0;
+
+	&__grid {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 20px;
+		counter-set: philosophie-cards;
+		z-index: 2;
+
+		&:before {
+			position: absolute;
+			content: "";
+			top: -80px;
+			left: 180px;
+			width: 637px;
+			aspect-ratio: 1;
+			background: url(../img/decision-lines.svg) no-repeat center/contain;
+			z-index: -1;
+		}
+
+		&:after {
+			position: absolute;
+			content: "";
+			top: 160px;
+			left: 0;
+			width: 138px;
+			height: 542px;
+			background: url(../img/philosophie-logo.svg) no-repeat center/contain;
+			z-index: -1;
+		}
+	}
+
+	&__btns {
+		display: none;
+		justify-content: center;
+		margin-top: 40px;
+	}
+
+	&-card {
+		max-width: 100%;
+		position: relative;
+		padding: 48px 32px;
+		backdrop-filter: blur(12px);
+		background: rgba(15, 15, 24, 0.8);
+		color: $gray-0;
+		min-height: 360px;
+
+		&__icon {
+			margin-bottom: 24px;
+		}
+
+		&__title {
+			font-weight: 700;
+			margin-bottom: 16px;
+		}
+
+		.icon {
+			background-color: $primary;
+		}
+
+		&::before {
+			content: "";
+			height: 2px;
+			width: 200px;
+			top: 0;
+			left: 0;
+			position: absolute;
+			background: linear-gradient(to right, #323547, transparent);
+		}
+
+		&::after {
+			content: "";
+			height: 200px;
+			width: 2px;
+			top: 0;
+			left: 0;
+			position: absolute;
+			background: linear-gradient(to bottom, #323547, transparent);
+		}
+
+		&__num {
+			&::before {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				z-index: -1;
+				font-size: 150px;
+				line-height: 100%;
+				color: #13131e;
+				font-weight: 700;
+				content: "0" counter(philosophie-cards);
+				counter-increment: philosophie-cards;
+			}
+		}
+
+		&._show {
+			display: block !important;
+		}
+	}
+}

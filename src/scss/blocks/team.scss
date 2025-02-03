@@ -1,0 +1,91 @@
+@use '../base/vars' as *;
+
+.team {
+	color: $gray-0;
+	margin-bottom: $section-margin;
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__inner {
+		position: relative;
+		background: url(../img/team/bg.webp) center no-repeat;
+		background-color: $gray-100;
+		padding-block: $section-margin;
+	}
+
+	&__experience {
+		color: $gray-50;
+		opacity: 0;
+		transition: transform .1s ease-in-out, opacity .3s ease-in-out;
+		transform: translateY(20px);
+	}
+
+	&__img {
+		aspect-ratio: 109/150;
+		object-fit: contain;
+		transition: scale .3s ease-in-out;
+		transform-origin: center bottom;
+	}
+
+	&__carousel {
+		max-width: 1064px;
+		width: calc(100% - 208px);
+		margin-inline: auto;
+	}
+
+	&__position {
+		margin-bottom: 10px;
+	}
+
+	&__slide {
+		display: inline-flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 4px;
+		padding-inline: 35px;
+		padding-top: 60px;
+		text-align: center;
+
+		&.is-selected {
+			.team {
+				&__img {
+					scale: 1.1;
+				}
+
+				&__experience {
+					opacity: 1;
+					transform: none;
+				}
+			}
+		}
+	}
+
+	&__arrow {
+		border: none;
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 64px;
+		height: 120px;
+		background: url(../img/team/arrow.svg) center no-repeat;
+
+		&_previous {
+			left: 24px;
+			transform: translateY(-50%) rotate(180deg);
+		}
+
+		&_next {
+			right: 24px;
+		}
+	}
+
+	&__controll {
+		display: none;
+		justify-content: center;
+		gap: 40px;
+		margin-top: 40px;
+	}
+}

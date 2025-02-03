@@ -17,6 +17,11 @@
 		position: static;
 		transform: none;
 	}
+
+	.philosophie {
+		background-size: contain;
+		background-position: center bottom;
+	}
 }
 
 @media (width <= 1280px) {
@@ -34,6 +39,31 @@
 		&_service {
 			top: -50%;
 			width: 280px;
+		}
+	}
+}
+
+@media (width <= 1122px) {
+	.empty {
+		display: none !important;
+	}
+
+	.philosophie {
+		padding-block: $section-margin;
+
+		&__grid {
+			& > *:first-child {
+				grid-column: 1 / -1;
+			}
+
+			&::before,
+			&::after {
+				display: none;
+			}
+		}
+
+		&-card {
+			min-height: auto;
 		}
 	}
 }
@@ -164,6 +194,17 @@
 		}
 	}
 
+	.about-us {
+		&__subtitle {
+			font-size: 18px;
+			margin-bottom: -25%;
+		}
+
+		&__img {
+			transform: translateY(50%);
+		}
+	}
+
 	.bubble {
 		&_service {
 			position: static;
@@ -171,6 +212,117 @@
 			margin-inline: auto;
 			width: 260px;
 			margin-bottom: 24px;
+		}
+	}
+
+	.info {
+		&__inner {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__col {
+			display: contents;
+			border: none;
+		}
+
+		&__item {
+			transform: none;
+			padding: 0;
+			gap: 16px;
+			cursor: default;
+
+			&._active {
+				border: none;
+			}
+
+			&:nth-child(1) {
+				order: 1;
+			}
+
+			&:nth-child(2) {
+				order: 3;
+			}
+
+			&:nth-child(3) {
+				order: 5;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+		}
+
+		&__text {
+			display: block;
+		}
+
+		&__media {
+			position: static;
+
+			&[hidden] {
+				display: block;
+			}
+
+			&:nth-child(1) {
+				order: 2;
+			}
+
+			&:nth-child(2) {
+				order: 4;
+			}
+
+			&:nth-child(3) {
+				order: 6;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: $section-margin;
+			}
+		}
+	}
+
+	.net {
+		padding-top: calc($section-margin * 2);
+
+		&__subtitle {
+			max-width: 100%;
+		}
+
+		&__inner {
+			flex-direction: column;
+		}
+
+		&__col {
+			&_left {
+				max-width: 100%;
+			}
+		}
+
+		&__text {
+			padding-left: 24px;
+		}
+	}
+
+	.team {
+		&__arrow {
+			display: none;
+		}
+
+		&__inner {
+			width: 100%;
+		}
+
+		&__carousel {
+			width: 100%;
+		}
+
+		&__controll {
+			display: flex;
+		}
+
+		&__title {
+			margin-bottom: 0;
 		}
 	}
 
@@ -439,6 +591,34 @@
 	}
 }
 
+@media (width <= 752px) {
+	.philosophie {
+		&__grid {
+			grid-template-columns: 1fr;
+		}
+
+		&__btns {
+			display: flex;
+		}
+
+		&-card {
+			display: none;
+
+			&:nth-child(3),
+			&:nth-child(5),
+			&:nth-child(6) {
+				display: block;
+			}
+		}
+	}
+}
+
+@media (width <= 640px) {
+	.net {
+		padding-top: calc($section-margin / 1.1);
+	}
+}
+
 @media (width <= 520px) {
 	.app {
 		&__inner {
@@ -467,6 +647,16 @@
 	.hero {
 		&__title {
 			font-size: 32px;
+		}
+	}
+
+	.net {
+		padding-top: 0;
+	}
+
+	.philosophie {
+		&-card {
+			padding: 40px 20px;
 		}
 	}
 }

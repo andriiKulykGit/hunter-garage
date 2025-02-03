@@ -4,8 +4,52 @@ block title
 	- var title = "Про нас";
 
 block content
+	.about-us
+		.container
+			.about-us__breadcrumb
+				- var breadcrumbWhite = true
+				include blocks/breadcrumb
+			section.about-us__head
+				.about-us__title
+					h1.display-1.accent-color Hunters Garage
+				p.h2.about-us__subtitle це дбайливий догляд, ремонт будь-якої складності та професійна якість за принципом «як для себе».
+				picture
+					source(srcset="img/placeholder.png" data-srcset="img/about-us.webp" type="image/webp")
+					img.about-us__img.lozad(src="img/about-us.jpg" srcset="img/placeholder.png" data-srcset="img/about-us.jpg" alt="Офіс Hunters Garage" width="1440")
+
+	section.net
+		.container
+			.net__inner
+				.net__col.net__col_left
+					.net__subtitle
+						h2 Hunters Garage - МЕРЕЖА АВТОСЕРВІСІВ ПОВНОГО ЦИКЛУ
+				.net__col.net__col_right
+					.net__title
+						div.h2 Обидві станції Hunters - приклад ідеального сервісу.
+					.net__text
+						p Обидва автосервіси – це ремзони на 18 та 15 підйомників відповідно,  автомийка та 3D-стенд розвалу-сходження у кожному центрі, кузовний і  малярний цехи, по три стапелі, майстерня з встановлення додаткового  обладнання, а також ароматна кава, смаколики, старлінк і генератори на  випадок відсутності світла.
+
+	include blocks/team
+
+	include blocks/info
+
+	.container
+		.fifty-fifty
+			div.fifty-fifty__icon-text
+				span.icon.icon_coffe-cup.icon_l
+				p Є можливість попити кави, перекусити, або просто розслабитися, зручно  розташувавшись в зоні відпочинку. Обидва автосервіси обладнано  генераторами.
+			div
+				p Або ж навіть можна провести ділову зустріч: для цього створені всі  умови. До слова, в цей час можна спостерігати через вікно процес  відновлення автомобіля до ідеального стану. Коли роботи виконано, клієнт отримує авто у відмінному стані, корисні рекомендації та старі деталі,  які були замінені.
+
+
+	include blocks/philosophie
+
+	include blocks/advantages
+
 	- var image = 'about-us'
 	- var videoID = 'JGwWNGJdvx8'
 	include blocks/video
+
 	include blocks/app
-	include blocks/prefooter
+
+	+prefooter("Hunters Garage – мережа автосервісів повного циклу.", "Hunters Garage – мережа автосервісів, де ваш автомобіль отримує все необхідне: від мийки до капітального ремонту двигуна. Наша задача – надавати такий сервіс, який є бажання рекомендувати  найдорожчим людям. Автосервіси знаходяться в Києві за адресами вул.  Сумська 3, вул. Богатирська, 3Г.")(class="h6")

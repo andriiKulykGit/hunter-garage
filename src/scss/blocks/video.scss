@@ -9,6 +9,8 @@
 
 	&__img {
 		margin-inline: auto;
+		aspect-ratio: 16/9;
+		object-fit: cover;
 	}
 
 	&__link {

@@ -1,0 +1,31 @@
+@use '../base/vars' as *;
+
+.net {
+	margin-bottom: $section-margin;
+
+	&__inner {
+		display: flex;
+		gap: 20px;
+	}
+
+	&__col {
+		flex: 1;
+
+		&_left {
+			max-width: 40%;
+		}
+	}
+
+	&__title {
+		margin-bottom: 40px;
+	}
+
+	&__subtitle {
+		max-width: 270px;
+	}
+
+	&__text {
+		padding-left: 96px;
+		border-left: 8px solid $primary;
+	}
+}

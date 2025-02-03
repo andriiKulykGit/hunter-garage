@@ -1,0 +1,61 @@
+@use '../base/vars' as *;
+
+.info {
+	margin-bottom: $section-margin;
+
+	&__inner {
+		display: flex;
+		gap: 20px;
+	}
+
+	&__col {
+		flex: 1;
+
+		&_left {
+			height: fit-content;
+			border-left: 2px solid $gray-40;
+		}
+	}
+
+	&__text {
+		display: none;
+		line-height: 140%;
+	}
+
+	&__img {
+		aspect-ratio: 70/53;
+		object-fit: contain;
+	}
+
+	&__media {
+		position: sticky;
+		top: calc(var(--header-height) + 20px);
+	}
+
+	&__item {
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 24px;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		padding-left: 30px;
+		transform: translateX(-3px);
+
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+
+		&._active {
+			border-left: 4px solid $gray-100;
+
+			.info {
+				&__text {
+					display: inline;
+				}
+			}
+		}
+	}
+}

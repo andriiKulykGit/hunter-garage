@@ -4,6 +4,7 @@ document.querySelectorAll("._show-all").forEach(btn => {
 
 		for (let i = 0; i < items.length; i++) {
 			items[i].removeAttribute("hidden")
+			items[i].classList.add("_show")
 		}
 
 		btn.remove()

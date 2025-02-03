@@ -26,16 +26,30 @@ if (document.querySelector(".hero__carousel")) {
 	})
 }
 
+if (document.querySelector(".team__carousel")) {
+	var teamSlider = new Flickity(".team__carousel", {
+		prevNextButtons: false,
+		cellSelector: ".team__slide",
+		draggable: true,
+		adaptiveHeight: false,
+		cellAlign: "center",
+		pageDots: false,
+		wrapAround: true,
+	})
+}
+
 document.addEventListener("click", function(e) {
 	const target = e.target
 
-	let slider = homeSlider || portfolioSlider;
+	let initedSlider = [teamSlider, portfolioSlider, homeSlider].filter(slider => slider !== undefined)
 
-	if (target.closest(".carousel-btn_previous")) {
-		slider.previous(true)
-	} else if (target.closest(".carousel-btn_next")) {
-		slider.next(true)
-	}
+	initedSlider.forEach(slider => {
+		if (target.closest("._arrow_previous")) {
+			slider.previous(true)
+		} else if (target.closest("._arrow_next")) {
+			slider.next(true)
+		}
+	})
 	updateProgress()
 })
 
