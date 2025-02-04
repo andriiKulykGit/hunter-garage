@@ -1,6 +1,16 @@
 @use '../base/vars' as *;
 @use '../base/mixins' as *;
 
+@media (width <= 1480px) {
+	.how-it-works {
+		&__inner {
+			&::before {
+				display: none;
+			}
+		}
+	}
+}
+
 @media (width <= 1380px) {
 	.app {
 		padding-inline: 60px;
@@ -8,6 +18,22 @@
 		&__img {
 			max-width: 480px;
 			right: 40px;
+		}
+	}
+
+	.how-it-works {
+		&__inner {
+			gap: 16px;
+		}
+
+		&__item {
+			&::before {
+				display: none;
+			}
+
+			&-separator {
+				display: none !important;
+			}
 		}
 	}
 }
@@ -97,6 +123,17 @@
 @media (width <= 980px) {
 	:root {
 		--header-height: 92px;
+	}
+
+	.how-it-works {
+		&__inner {
+			flex-direction: column;
+			gap: 24px;
+		}
+
+		&__icon {
+			display: none;
+		}
 	}
 
 	.header {
@@ -212,6 +249,37 @@
 			margin-inline: auto;
 			width: 260px;
 			margin-bottom: 24px;
+		}
+	}
+
+	.how-it-works {
+		&__inner {
+			padding: 20px;
+		}
+
+		&__col {
+			max-width: none;
+			gap: 12px;
+		}
+
+		&__item {
+			padding: 24px 20px;
+
+			&-body {
+				flex-direction: column;
+			}
+
+			&-text {
+				max-width: none;
+			}
+
+			&-btn {
+				margin-left: 0;
+			}
+
+			&::after {
+				display: none;
+			}
 		}
 	}
 

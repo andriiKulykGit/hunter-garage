@@ -1,0 +1,133 @@
+@use '../base/vars' as *;
+
+.how-it-works {
+	margin-bottom: $section-margin;
+	padding-block: $section-margin;
+	background: url(../img/how-it-works/bg.webp) center top no-repeat;
+	background-size: cover;
+	background-color: #0C0D13;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		background-color: $gray-0;
+		padding: 40px;
+		color: $gray-100;
+		z-index: 2;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 0;
+			bottom: 0;
+			left: 340px;
+			width: 128px;
+			background: url(../img/how-it-works/line.svg) center no-repeat;
+			background-size: cover;
+			z-index: -1;
+		}
+	}
+
+	&__col {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+
+		&_right {
+			gap: 12px;
+			counter-set: how-it-works;
+			max-width: 814px;
+		}
+
+		&_left {
+			max-width: 300px;
+			width: 100%;
+		}
+	}
+
+	&__text {
+		flex: 1;
+	}
+
+	&__item {
+		position: relative;
+		color: $gray-0;
+		background-color: $gray-100;
+		padding: 32px 40px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		counter-increment: how-it-works;
+
+		&-head {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+		}
+
+		&-body {
+			display: flex;
+			gap: 36px;
+		}
+
+		&-text {
+			flex: 1;
+			max-width: 510px;
+		}
+
+		&-btn {
+			margin-left: auto;
+		}
+
+		&::after {
+			position: absolute;
+			content: "";
+			pointer-events: none;
+			top: 0;
+			right: 0;
+			width: 40px;
+			height: 40px;
+			background: linear-gradient(45deg, transparent 0%, transparent 49.9%, $gray-0 50%, $gray-0 100%);
+		}
+
+		&::before {
+			position: absolute;
+			content: "0" counter(how-it-works);
+			top: 50%;
+			right: calc(100% + 32px);
+			transform: translateY(-50%);
+			font-weight: 700;
+			font-size: 56px;
+			color: $gray-100;
+		}
+
+		.icon {
+			background-color: $primary;
+		}
+
+		&-separator {
+			display: none;
+		}
+
+		&:not(:last-of-type) {
+			.how-it-works {
+				&__item {
+					&-separator {
+						display: block;
+						position: absolute;
+						content: "";
+						pointer-events: none;
+						right: calc(100% + 64px);
+						top: 100%;
+						width: 4px;
+						height: 82px;
+						background: url(../img/how-it-works/separator.svg) center no-repeat;
+						transform: translateY(-35%);
+					}
+				}
+			}
+		}
+	}
+}

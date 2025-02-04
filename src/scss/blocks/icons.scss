@@ -45,6 +45,7 @@ $size: var(--size);
 	@include new-mask-icon("app");
 	@include new-mask-icon("brakes");
 	@include new-mask-icon("car-dash");
+	@include new-mask-icon("calendar");
 	@include new-mask-icon("certificate");
 	@include new-mask-icon("check");
 	@include new-mask-icon("chevron-header");
@@ -82,6 +83,7 @@ $size: var(--size);
 	@include new-mask-icon("original");
 	@include new-mask-icon("paint");
 	@include new-mask-icon("phone");
+	@include new-mask-icon("phone-outline");
 	@include new-mask-icon("point");
 	@include new-mask-icon("polishing");
 	@include new-mask-icon("portfolio-outline");
@@ -115,6 +117,7 @@ $size: var(--size);
 	@include new-mask-icon("wheel-alignment");
 	@include new-mask-icon("wheel");
 	@include new-mask-icon("window");
+	@include new-mask-icon("work");
 
 	&-wrapper {
 		background-color: $gray-100;
