@@ -16,6 +16,10 @@
 		}
 	}
 
+	&__search {
+		margin-bottom: 12px;
+	}
+
 	&__grid {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
@@ -144,5 +148,10 @@
 				opacity: 1;
 			}
 		}
+	}
+
+	&_prices {
+		background-color: $gray-20;
+		margin-bottom: $section-margin;
 	}
 }

@@ -96,4 +96,13 @@
 	.icon {
 		background-color: currentcolor;
 	}
+
+	&_black {
+		color: $gray-100;
+
+		@include hover {
+			background-color: transparent;
+			background-color: $gray-20;
+		}
+	}
 }

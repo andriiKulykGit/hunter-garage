@@ -217,6 +217,12 @@
 			right: 0%;
 		}
 	}
+
+	.search {
+		&__aside {
+			width: 320px;
+		}
+	}
 }
 
 @media (width <= 768px) {
@@ -280,6 +286,42 @@
 			&::after {
 				display: none;
 			}
+		}
+	}
+
+	.search {
+		&__aside {
+			width: 100%;
+
+			&._hidden {
+				display: none;
+			}
+		}
+
+		&__phone {
+			display: none;
+		}
+
+		&__content {
+			display: none;
+			padding: 12px;
+
+			&._active {
+				display: block;
+			}
+		}
+
+		&__head {
+			display: flex;
+		}
+
+		&__bottom {
+			justify-content: center;
+			transform: translateY(12px);
+		}
+
+		&__subtitle {
+			display: none;
 		}
 	}
 

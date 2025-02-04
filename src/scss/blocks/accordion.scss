@@ -1,0 +1,72 @@
+@use "../base/vars.scss" as *;
+@use "../base/mixins.scss" as *;
+
+.accordion {
+	background-color: $gray-0;
+	width: 100%;
+
+	&__btn {
+		position: relative;
+		border: none;
+		background-color: transparent;
+		padding: 20px 24px;
+		padding-right: 60px;
+		font-weight: 700;
+		cursor: pointer;
+		text-align: left;
+		transition: 0.1s background-color ease-in-out;
+		width: 100%;
+		border-bottom: 1px solid transparent;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 24px;
+			transform: translateY(-50%) rotate(90deg);
+			width: 24px;
+			height: 24px;
+			transform-origin: center;
+			mask-repeat: no-repeat;
+			mask-image: url("../img/svgicons/chevron.svg");
+			mask-size: 24px;
+			mask-position: center;
+			background-color: currentcolor;
+			transition: 0.2s transform ease-in-out;
+		}
+
+		&[aria-expanded="true"] {
+			border-color: $gray-40;
+
+			&::after {
+				transform: translateY(-50%) rotate(-90deg);
+			}
+		}
+
+		@include hover {
+			background-color: $gray-30;
+		}
+	}
+
+	&__link {
+		border: none;
+		background-color: transparent;
+		padding: 8px;
+		cursor: pointer;
+		transition: 0.1s background-color ease-in-out;
+		width: 100%;
+		text-align: left;
+
+		@include hover {
+			background-color: $gray-30;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		list-style: none;
+		padding: 20px 16px;
+	}
+}

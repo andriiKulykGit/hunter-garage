@@ -5,7 +5,7 @@ block title
 
 
 block content
-	.single
+	.single.single_prices
 		.container
 			.single__body
 				.single__breadcrumb
@@ -14,7 +14,7 @@ block content
 					.single__title
 						h1.h1.normal Ціни
 						h2.h5.single__subtitle Ремонт двигуна та трансмісії
-					.search__search
+					.single__search
 						label.input
 							input.input__field(list="services" type="text" placeholder="Введіть назву послуги" required)
 							span.input__icon
@@ -31,4 +31,905 @@ block content
 							option(value="Ремонт паливної системи")
 							option(value="Ремонт системи охолодження")
 							option(value="Ремонт системи вентиляції")
+
+					.search__body
+						aside.search__aside
+							ul.search__list
+								li.search__item
+									.accordion
+										button.accordion__btn(type="button" aria-expanded="true" aria-controls="accordion-1")
+											span.accordion__title Ремонт двигуна та трансмісії
+										div#accordion-1.accordion__content
+											ul.accordion__list
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-1") Ремонт двигуна
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-2") Ремонт трансмісії
+								li.search__item
+									.accordion
+										button.accordion__btn(type="button" aria-expanded="false" aria-controls="accordion-2")
+											span.accordion__title Технічне обслуговування та ремонт
+										div#accordion-2.accordion__content(hidden)
+											ul.accordion__list
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-3") Ремонт двигуна
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-4") Ремонт трансмісії
+								li.search__item
+									.accordion
+										button.accordion__btn(type="button" aria-expanded="false" aria-controls="accordion-3")
+											span.accordion__title Електрика
+										div#accordion-3.accordion__content(hidden)
+											ul.accordion__list
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-5") Ремонт двигуна
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-6") Ремонт трансмісії
+								li.search__item
+									.accordion
+										button.accordion__btn(type="button" aria-expanded="false" aria-controls="accordion-4")
+											span.accordion__title Інтер'єр
+										div#accordion-4.accordion__content(hidden)
+											ul.accordion__list
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-7") Ремонт двигуна
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-8") Ремонт трансмісії
+								li.search__item
+									.accordion
+										button.accordion__btn(type="button" aria-expanded="false" aria-controls="accordion-5")
+											span.accordion__title Автомийка
+										div#accordion-5.accordion__content(hidden)
+											ul.accordion__list
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-9") Ремонт двигуна
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-10") Ремонт трансмісії
+								li.search__item
+									.accordion
+										button.accordion__btn(type="button" aria-expanded="false" aria-controls="accordion-6")
+											span.accordion__title Сертифікація
+										div#accordion-6.accordion__content(hidden)
+											ul.accordion__list
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-11") Ремонт двигуна
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-12") Ремонт трансмісії
+								li.search__item
+									.accordion
+										button.accordion__btn(type="button" aria-expanded="false" aria-controls="accordion-7")
+											span.accordion__title Кузовний ремонт та фарбування
+										div#accordion-7.accordion__content(hidden)
+											ul.accordion__list
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-13") Ремонт двигуна
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-14") Ремонт трансмісії
+								li.search__item
+									.accordion
+										button.accordion__btn(type="button" aria-expanded="false" aria-controls="accordion-8")
+											span.accordion__title Інші послуги
+										div#accordion-8.accordion__content(hidden)
+											ul.accordion__list
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-15") Ремонт двигуна
+												li.accordion__item
+													button.accordion__link(type="button" aria-controls="table-16") Ремонт трансмісії
+						.search__content
+							.search__head
+								button.search__back(type="button")
+									span.search__back-icon
+										span.icon.icon_chevron.icon_m
+									span Назад
+							.search__table
+								table.table(id="table-1")
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-2" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-3" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-4" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-5" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-6" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-7" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-8" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-9" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-10" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-11" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-12" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-13" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-14" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-15" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+								table.table(id="table-16" hidden)
+									tbody
+										tr.table__row
+											th Діагностика двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 до 2200 грн.
+										tr.table__row
+											th Чистка клапанів горіховим лушпинням
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 5200 грн.
+										tr.table__row
+											th Заміна піддона двигуна
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 2000 грн.
+										tr.table__row
+											th Заміна зчеплення
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 6000 грн.
+										tr.table__row
+											th Діагностика МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 550 грн.
+										tr.table__row
+											th Заміна масла МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Чистка-промивка МКПП
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 750 грн.
+										tr.table__row
+											th Заміна ременя ГРМ та помпи
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 7500 грн.
+										tr.table__row
+											th Заміна ланцюга ГРМ
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 15000 грн.
+										tr.table__row
+											th Заміна ременя генератора
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 2000 грн.
+										tr.table__row
+											th Заміна свічок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") 900 грн.
+										tr.table__row
+											th Чистка форсунок
+											td.bold
+												span(data-title="это текст-\"рыба\", часто используемый в печати и вэб-дизайне.") від 330 грн за 1 шт.
+							.search__bottom
+								.search__subtitle.text-l Виконуємо повний комплекс робіт
+								.search__btns
+									.btn-wrapper
+										a.btn.btn_yellow(href="#") Замовити послугу
+									.search__phone
+										a.phone.phone_black(href="tel:+380676625801")
+											span.phone__icon
+												span.icon.icon_phone.icon_m
+											span.phone__text.bold +38(067) 66-25-801
 	include ./blocks/app.pug

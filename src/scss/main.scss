@@ -20,6 +20,7 @@
 /* Blocks */
 @use './blocks/about-us';
 @use './blocks/advantage';
+@use './blocks/accordion';
 @use './blocks/app';
 @use './blocks/article';
 @use './blocks/big-card';
@@ -48,6 +49,7 @@
 @use './blocks/prefooter';
 @use './blocks/promo';
 @use './blocks/pswp';
+@use './blocks/search';
 @use './blocks/section';
 @use './blocks/service-hero';
 @use './blocks/services-home';
