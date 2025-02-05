@@ -1512,7 +1512,7 @@ a {
   right: 0;
   width: 80px;
   height: 80px;
-  background: linear-gradient(45deg, transparent 0%, transparent 49.9%, var(--gray-100) 50%, var(--gray-100) 100%);
+  background: linear-gradient(45deg, transparent 0%, transparent 49.9%, #0c0d13 50%, #0c0d13 100%);
 }
 
 .big-card::before {
@@ -1522,7 +1522,7 @@ a {
   height: 24px;
   top: 12px;
   right: 12px;
-  background-color: var(--gray-100);
+  background-color: #0c0d13;
   -webkit-mask-position: center;
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -3960,7 +3960,7 @@ a {
   padding-block: var(--section-margin);
   background: url(../img/decision-lines.svg) left top no-repeat;
   background-size: 802px;
-  background-color: #0C0D13;
+  background-color: #0c0d13;
 }
 
 .services-home__title {
@@ -4110,6 +4110,10 @@ a {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 40px;
+}
+
+.single__grid .big-card::after {
+  background: linear-gradient(45deg, transparent 0%, transparent 49.9%, var(--gray-0) 50%, var(--gray-0) 100%);
 }
 
 .single__grid .big-card:nth-of-type(6n + 1) {
