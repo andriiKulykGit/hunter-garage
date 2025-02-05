@@ -6,7 +6,7 @@
 	padding-block: $section-margin;
 	background: url(../img/decision-lines.svg) left top no-repeat;
 	background-size: 802px;
-	background-color: #0C0D13;
+	background-color: #0c0d13;
 
 	&__title {
 		margin-bottom: 40px;
@@ -17,6 +17,12 @@
 		gap: 40px;
 		grid-template-columns: repeat(auto-fit, minmax(332px, 1fr));
 		margin-bottom: 56px;
+
+		.big-card {
+			&::after {
+				background: linear-gradient(45deg, transparent 0%, transparent 49.9%, var(--gray-0) 50%, var(--gray-0) 100%);
+			}
+		}
 	}
 
 	&__btns {

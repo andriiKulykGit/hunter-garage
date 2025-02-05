@@ -3960,7 +3960,7 @@ a {
   padding-block: var(--section-margin);
   background: url(../img/decision-lines.svg) left top no-repeat;
   background-size: 802px;
-  background-color: #0C0D13;
+  background-color: #0c0d13;
 }
 
 .services-home__title {
@@ -3972,6 +3972,10 @@ a {
   gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(332px, 1fr));
   margin-bottom: 56px;
+}
+
+.services-home__grid .big-card::after {
+  background: linear-gradient(45deg, transparent 0%, transparent 49.9%, var(--gray-0) 50%, var(--gray-0) 100%);
 }
 
 .services-home__btns {
