@@ -2,7 +2,10 @@
 	.container.relative
 		a.video__link(href="https://youtu.be/" + videoID  target="_blank" rel="noopenner nofollow noreferrer" data-pswp-type="youtube-video" data-id=videoID)
 			span.visually-hidden Назва відео
-			picture
+			//- picture
 				source(srcset="img/placeholder.png" data-srcset="img/video/" + image + ".webp" type="image/webp")
 				img.video__img.lozad(src="img/video/" + image + ".jpg" srcset="img/placeholder.png" data-srcset="img/video/" + image + ".jpg" alt="Назва відео" width="1440")
+			video(autoplay muted loop width="1440" height="810")
+				source(src="files/main_page.webm" type="video/webm")
+				source(src="files/main_page.mp4" type="video/mp4")
 		.video__play

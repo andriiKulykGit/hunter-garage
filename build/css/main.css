@@ -992,7 +992,7 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100dvh;
+  min-height: 100lvh;
 }
 
 .main {
@@ -2545,7 +2545,7 @@ a {
   color: var(--gray-0);
   background-color: var(--gray-100);
   min-height: 810px;
-  max-height: 120dvh;
+  max-height: 120lvh;
 }
 
 .hero__slide {
@@ -3900,7 +3900,7 @@ a {
   color: var(--gray-0);
   padding-block: calc(var(--section-margin) * 2);
   min-height: 810px;
-  max-height: 120dvh;
+  max-height: 120svh;
   overflow: hidden;
   margin-bottom: var(--section-margin);
 }
@@ -4530,6 +4530,10 @@ a {
   -ms-flex: 1;
   flex: 1;
   width: 100%;
+}
+
+.video video {
+  max-width: 100%;
 }
 
 /* Media queries (must be last) */
@@ -5268,7 +5272,7 @@ a {
 
   .service-hero {
     padding: 0;
-    min-height: calc(100dvh - (var(--header-height) + var(--bottom-bar-height)));
+    min-height: calc(100svh - (var(--header-height) + var(--bottom-bar-height)));
     max-height: none;
     padding-top: calc(var(--header-height) + var(--section-margin));
     padding-bottom: var(--section-margin);
