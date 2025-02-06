@@ -3975,7 +3975,7 @@ a {
 }
 
 .services-home__grid .big-card::after {
-  background: linear-gradient(45deg, transparent 0%, transparent 49.9%, var(--gray-0) 50%, var(--gray-0) 100%);
+  background: linear-gradient(45deg, transparent 0%, transparent 49.9%, #0c0d13 50%, #0c0d13 100%);
 }
 
 .services-home__btns {
