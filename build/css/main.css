@@ -3974,6 +3974,10 @@ a {
   margin-bottom: 56px;
 }
 
+.services-home__grid .big-card::after {
+  background: linear-gradient(45deg, transparent 0%, transparent 49.9%, var(--gray-0) 50%, var(--gray-0) 100%);
+}
+
 .services-home__btns {
   display: -webkit-box;
   display: -ms-flexbox;
