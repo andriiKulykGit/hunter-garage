@@ -1,6 +1,7 @@
 .video.pswp-gallery
 	.container.relative
-		a.video__link(href="https://youtu.be/" + videoID  target="_blank" rel="noopenner nofollow noreferrer" data-pswp-type="youtube-video" data-id=videoID)
+		//- a.video__link(href="https://youtu.be/" + videoID  target="_blank" rel="noopenner nofollow noreferrer" data-pswp-type="youtube-video" data-id=videoID)
+		.video__link
 			span.visually-hidden Назва відео
 			//- picture
 				source(srcset="img/placeholder.png" data-srcset="img/video/" + image + ".webp" type="image/webp")
@@ -8,4 +9,4 @@
 			video(autoplay muted loop width="1440" height="810")
 				source(src="files/main_page.webm" type="video/webm")
 				source(src="files/main_page.mp4" type="video/mp4")
-		.video__play
+		//- .video__play
