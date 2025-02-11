@@ -32,18 +32,18 @@ block content
 									a.btn.btn_white(href="#") Ціни на послуги
 						.decision__col
 							.decision__media
-								picture
+								//- picture
 									source(srcset="img/placeholder.png" data-srcset="img/service/to/3.webp" type="image/webp")
 									img.lozad(src="img/service/to/3.jpg" srcset="img/placeholder.png" data-srcset="img/service/to/3.jpg" alt="Назва відео" width="550")
-								//- .video.video_mini.pswp-gallery.relative
+								.video.video_mini.pswp-gallery.relative
 									- var image = 'about-us'
 									- var videoID = 'JGwWNGJdvx8'
-									a.video__link(href="https://youtu.be/" + videoID  target="_blank" rel="noopenner nofollow noreferrer" data-pswp-type="youtube-video" data-id=videoID)
+									//- a.video__link(href="https://youtu.be/" + videoID  target="_blank" rel="noopenner nofollow noreferrer" data-pswp-type="youtube-video" data-id=videoID)
+									.video__link
 										span.visually-hidden Назва відео
 										video(autoplay muted loop width="550" height="430")
 											source(src="files/to.webm" type="video/webm")
 											source(src="files/to.mp4" type="video/mp4")
-									.video__play
 
 	- var iconCard1 = "reglament"
 	- var titleCard1 = "Роботи згідно з регламентом"
