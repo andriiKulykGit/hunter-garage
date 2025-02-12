@@ -4534,6 +4534,9 @@ a {
 
 .video video {
   max-width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 /* Media queries (must be last) */
