@@ -3912,11 +3912,11 @@ a {
   -webkit-transform: translateY(50%);
   -ms-transform: translateY(50%);
   transform: translateY(50%);
-  max-width: 770px;
 }
 
 .service-hero__title {
   margin-bottom: 24px;
+  max-width: 770px;
 }
 
 .service-hero__text {
